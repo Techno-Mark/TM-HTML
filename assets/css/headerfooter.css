@@ -1,522 +1,548 @@
 @media (min-width: 1200px) {
-    .main-header .dropdown {
-        position: unset;
-    }
+  .main-header .dropdown {
+    position: unset;
+  }
 
-    .main-header .dropdown-menu {
-        width: 100%;
-        padding-top: 0;
-        margin-top: -1px !important;
-        overflow: hidden;
-    }
-
-    /* .main-header .navbar-brand {
-      padding: 26px 60px;
-      border-right: 1px solid #8e9aab;
-    }
-    .main-header .navbar {
-      padding: 0;
-    }
-    .main-header .themechange {
-      padding-inline: 28.5px;
-      border-left: 1px solid #8e9aab;
-    }
-    .main-header .navbar-nav .nav-item {
-      padding: 26px 0;
-    }
-    .main-header .navbar-nav .nav-item .nav-link {
-      font-family: Montserrat;
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 20px;
-      text-align: center;
-      color: #1d3557;
-      text-transform: uppercase;
-    }
-    .main-header .navbar-nav .nav-item:hover .nav-link {
-      color: #40aa46;
-    }
-    .main-header #technomarknavbar {
-      justify-content: center;
-    }
-    .main-header .navbar-nav {
-      column-gap: 20px;
-    } */
+  .main-header .dropdown-menu {
+    width: 100%;
+    padding-top: 0;
+    margin-top: -1px !important;
+    overflow: hidden;
+  }
 }
 
 header {
-    position: relative;
-    z-index: 9;
+  position: relative;
+  z-index: 999;
+  transition: all ease .3s;
+}
+
+
+header.sticky-header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    transition: all ease .7s;
+    box-shadow: -4px -2px 5px 0 rgb(0 0 0 / 50%);
 }
 
 .main-header .navbar-brand {
-    padding: 26px 60px;
-    border-right: 1px solid #8e9aab;
+  padding: 26px 60px;
+  border-right: 1px solid #8e9aab;
+}
+
+.main-header .navbar-toggler {
+  outline: none !important;
 }
 
 .main-header .navbar {
-    padding: 0;
+  padding: 0;
 }
 
 .main-header .themechange {
-    padding-inline: 28.5px;
-    border-left: 1px solid #8e9aab;
+  display: none !important;
+  padding-inline: 28.5px;
+  border-left: 1px solid #8e9aab;
 }
 
 .main-header .navbar-nav .nav-item {
-    padding: 26px 0;
+  padding: 26px 0;
 }
 
 .main-header .navbar-nav .nav-item .nav-link {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 20px;
-    text-align: center;
-    color: #1d3557;
-    text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  color: #1d3557;
+  text-transform: uppercase;
 }
 
 .main-header .navbar-nav .nav-item:hover .nav-link {
-    color: #40aa46;
+  color: #40aa46;
 }
 
 .main-header #technomarknavbar {
-    justify-content: center;
+  justify-content: center;
 }
 
 .main-header .navbar-nav {
-    column-gap: 20px;
+  column-gap: 20px;
 }
 
 .main-header .departmanet-navigation,
 .main-header .hiredevlopers-navigation {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
 }
 
 .main-header .departmanet-navigation a {
-    display: flex;
-    align-items: center;
-    margin-bottom: 6px;
-    text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  text-decoration: none !important;
 }
 
 .main-header .departmanet-navigation a img {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .main-header .departmanet-navigation a span {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 26px;
-    /* text-align: center; */
-    color: #1d3557;
-    text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  /* text-align: center; */
+  color: #1d3557;
+  text-transform: uppercase;
 }
 
 .main-header .hiredevlopers-navigation a.hirenav-title {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24.38px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    margin-bottom: 20px;
-    color: #1d3557;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #1d3557;
 }
 
 .main-header .hiredevlopers-navigation a {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #1d3557;
-    text-transform: capitalize;
-    margin-bottom: 12px;
-    text-decoration: none !important;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #1d3557;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+  text-decoration: none !important;
 }
 
 .main-header .hirenav-subitem {
-    margin-top: 20px;
-    padding-top: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .single-resource h4,
 .single-company-item h4,
 .single-common-nav h4 {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 24.38px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #1d3557;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.38px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #1d3557;
 }
 
 .single-resource p,
 .single-company-item p,
 .single-common-nav p {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 32.4px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #1d3557;
-    margin-bottom: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32.4px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #1d3557;
+  margin-bottom: 0;
 }
 
 .resource-navbar-container .col-md-3 {
-    border-right: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
 }
 
 .resource-navbar-container,
 .company-navbar-container {
-    border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .service-navbar-container {
-    padding: 0 40px;
-    border-bottom: 1px solid #e6e6e6;
+  padding: 0 40px;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .common-navigatinos {
-    padding: 20px;
+  padding: 20px;
 }
 
 .single-common-nav {
-    padding: 30px 40px;
-    background: #f8f8f8;
-    display: block;
-    width: 100%;
-    transition: all 0.5s ease-in;
-    text-decoration: none !important;
+  padding: 30px 40px;
+  background: #f8f8f8;
+  display: block;
+  width: 100%;
+  transition: all 0.5s ease-in;
+  text-decoration: none !important;
 }
 
 .single-common-nav:hover {
-    background: #40aa46;
+  background: #40aa46;
 }
 
 .single-common-nav:hover h4,
 .single-common-nav:hover p {
-    color: #fff;
+  color: #fff;
 }
 
 .cmn-nav-title {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    text-align: left;
-    color: #1d3557;
-    text-decoration: none !important;
-    padding-inline: 50px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #1d3557;
+  text-decoration: none !important;
+  padding-inline: 50px;
 }
 
 .no-bg {
-    background: none;
+  background: none;
 }
 
 .single-common-nav.no-bg h4 {
-    padding-inline: 15px;
+  padding-inline: 15px;
 }
 
 .service-navbar-container .row .col-lg-3:not(:last-child),
 .resource-navbar-container .row .col-md-6:not(:last-child),
 .company-navbar-container .row .col-md-6:not(:last-child) {
-    border-right: 1px solid #e6e6e6;
+  border-right: 1px solid #e6e6e6;
 }
 
 .hiredevlopers-navigation {
-    padding-inline: 40px;
+  padding-inline: 40px;
 }
 
 .single-resource,
 .single-company-item {
-    display: block;
-    padding: 30px 40px;
+  display: block;
+  padding: 30px 40px;
 }
 
 footer {
-    position: relative;
-    background: #1d3557;
+  position: relative;
+  background: #1d3557;
 }
 
 .footer-top {
-    padding: 80px 0 60px;
+  padding: 80px 0 60px;
+  position: relative;
 }
 
 .footer-title h4 {
-    font-family: Montserrat;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 45px;
-    text-align: left;
-    color: #fff;
-    padding-right: 90px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
+  color: #fff;
+  padding-right: 90px;
 }
 
 .footer-title h4 span {
-    color: #168944;
+  color: #168944;
 }
 
 .footer-nav {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-nav a {
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.5px;
-    text-align: left;
-    color: #fff;
-    margin-bottom: 20px;
-    text-decoration: none;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
 
 .footer-nav a.footer-nav-subtitle {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 28px;
-    text-align: left;
-    color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
 }
 
 .footer-nav.secondary-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer-nav.secondary-footer a.footer-nav-subtitle {
-    display: block;
-    width: 100%;
+  display: block;
+  width: 100%;
 }
 
 .footer-nav.secondary-footer a {
-    width: 50%;
+  width: 50%;
 }
 
 .secondary-footer-part {
-    padding-top: 50px;
+  padding-top: 50px;
 }
 
 .footer-title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .company-info {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .company-info a {
-    margin-bottom: 10px;
-    text-decoration: none !important;
-    color: #fff;
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19.5px;
-    text-align: left;
+  margin-bottom: 10px;
+  text-decoration: none !important;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
 }
 
 .company-info a img {
-    margin-right: 5px;
-    min-width: 27px;
+  margin-right: 5px;
+  min-width: 27px;
 }
 
 .social-media-footer {
-    display: flex;
+  display: flex;
 }
 
 .social-media-footer a {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .footer-bottom-line {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-bottom {
-    position: relative;
-    padding: 30px 0;
-    background: #182d4a;
+  position: relative;
+  padding: 30px 0;
+  background: #182d4a;
 }
 
 .footer-bottom-left a,
 .footer-bottom-right a {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 36px;
-    text-align: right;
-    color: #bfcfd9 !important;
-    margin-bottom: 0;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: right;
+  color: #bfcfd9 !important;
+  margin-bottom: 0;
 }
 
 .footer-bottom-right {
-    display: flex;
+  display: flex;
 }
 
 .footer-bottom-right a:first-child {
-    padding-right: 10px;
-    margin-right: 10px;
-    border-right: 1px solid #bfcfd9;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #bfcfd9;
 }
 
 .single-common-nav h4 {
-    position: relative;
-    width: fit-content;
-    padding-right: 40px;
+  position: relative;
+  width: fit-content;
+  padding-right: 40px;
 }
 
 .single-common-nav h4::before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    right: 0;
-    background-image: url(../images/Group23751959.png);
-    background-repeat: no-repeat;
-    height: 16px;
-    width: 22px;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  background-image: url(../images/Group23751959.png);
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 22px;
 }
 
 .single-common-nav:hover h4::before {
-    background-image: url(../images/Path.png);
+  background-image: url(../images/Path.png);
 }
 
 .single-common-nav.no-bg h4::before {
-    content: none;
+  content: none;
 }
 
 @media (max-width: 1700px) {
-    .footer-nav.secondary-footer {
-        flex-direction: column;
-    }
+  .footer-nav.secondary-footer {
+    flex-direction: column;
+  }
 
-    .footer-nav.secondary-footer a {
-        width: 100%;
-    }
+  .footer-nav.secondary-footer a {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1399px) {
-    .main-header .navbar-nav .nav-item .nav-link {
-        font-size: 18px;
-    }
+  .main-header .navbar-nav .nav-item .nav-link {
+    font-size: 16px;
+  }
+  .main-header .themechange {
+    padding: 8px;
+  }
+  .main-header .departmanet-navigation a img {
+    max-width: 30px;
+  }
+  .service-navbar-container {
+    padding: 0 20px;
+  }
 
-    .service-navbar-container {
-        padding: 0 20px;
-    }
+  .main-header .departmanet-navigation a span {
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-    .main-header .departmanet-navigation a span {
-        font-size: 16px;
-        line-height: 22px;
-    }
+  .main-header .hiredevlopers-navigation a.hirenav-title {
+    font-size: 14px;
+  }
 
-    .main-header .hiredevlopers-navigation a.hirenav-title {
-        font-size: 17px;
-    }
+  /* .hirenav-subitem{
+        border-top: 1px solid red;
+    } */
 
-    .main-header .hiredevlopers-navigation a {
-        font-size: 16px;
-        line-height: 20px;
-    }
+  .main-header .hiredevlopers-navigation a {
+    font-size: 16px;
+    line-height: 20px;
+  }
 
-    .single-common-nav {
-        padding: 20px;
-    }
+  .single-common-nav {
+    padding: 20px;
+  }
 
-    .single-common-nav.no-bg h4 {
-        padding-inline: 0;
-    }
+  .single-common-nav.no-bg h4 {
+    padding-inline: 0;
+  }
 
-    .single-resource h4,
-    .single-company-item h4,
-    .single-common-nav h4 {
-        font-size: 17px;
-        line-height: 22px;
-    }
+  .single-resource h4,
+  .single-company-item h4,
+  .single-common-nav h4 {
+    font-size: 16px;
+    line-height: 22px;
+  }
 
-    .single-resource p,
-    .single-company-item p,
-    .single-common-nav p {
-        font-size: 16px;
-    }
+  .single-resource p,
+  .single-company-item p,
+  .single-common-nav p {
+    font-size: 14px;
+  }
 
-    .single-resource,
-    .single-company-item {
-        padding: 19px;
-    }
+  .single-resource,
+  .single-company-item {
+    padding: 19px;
+  }
 
-    .sidebar-btn {
-        padding: 0 1rem;
-    }
+  .footer-title h4 {
+    font-size: 26px;
+    line-height: 42px;
+  }
+
+  .footer-nav a {
+    font-size: 14px;
+  }
+  .company-info a {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .navbar-toggler[aria-expanded="false"] {
+  /* .navbar-toggler[aria-expanded="false"] {
         position: absolute;
-        right: 120px;
+        right: 70px;
     }
 
     .navbar-toggler[aria-expanded="true"] {
-        margin-right: 30px;
-    }
+        margin-right: 70px;
+    } */
 
-    .main-header .navbar-nav .nav-item {
-        padding: 5px 0;
-    }
+  .main-header .navbar-toggler {
+    margin-right: 25px;
+  }
 
-    .main-header .navbar-collapse {
-        padding-inline: 30px;
-    }
+  .main-header .navbar-nav .nav-item {
+    padding: 5px 0;
+  }
 
-    .main-header .navbar-brand {
-        padding-left: 30px;
-        border: none;
-    }
+  .main-header .navbar-collapse {
+    padding-inline: 30px;
+  }
 
-    .main-header .navbar-nav .nav-item .nav-link {
-        text-align: left;
-    }
+  .main-header .navbar-brand {
+    padding-left: 30px;
+    border: none;
+  }
 
-    .main-header .navbar {
-        padding-bottom: 10px;
-    }
+  .main-header .navbar-nav .nav-item .nav-link {
+    text-align: left;
+  }
 
-    .footer-bottom-line {
-        flex-direction: column;
-    }
+  .main-header .navbar {
+    padding-bottom: 10px;
+  }
 
-    .footer-bottom-left {
-        text-align: center;
-    }
+  .footer-bottom-line {
+    flex-direction: column;
+  }
 
-    .footer-bottom-right {
-        justify-content: center;
-    }
+  .footer-bottom-left {
+    text-align: center;
+  }
+
+  .footer-bottom-right {
+    justify-content: center;
+  }
+  .footer-nav a {
+    font-size: 15px;
+  }
+  .footer-title h4 {
+    font-size: 24px;
+    line-height: 35px;
+  }
 }
 
 @media (max-width: 992px) {
+  .footer-logo img {
+    max-width: 60px;
+  }
 
-    .main-header .departmanet-navigation,
-    .main-header .hiredevlopers-navigation {
-        padding-left: 0;
-    }
+  .main-header .departmanet-navigation,
+  .main-header .hiredevlopers-navigation {
+    padding-left: 0;
+  }
 
-    .footer-top .row {
-        row-gap: 20px;
-    }
+  .footer-top .row {
+    row-gap: 40px;
+  }
+
+  .footer-title,
+  .company-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar-brand img {
+    max-width: 150px;
+  }
 }
