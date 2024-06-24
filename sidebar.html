@@ -1,0 +1,75 @@
+<button type="button" class="sidebar-btn" onclick="showDrawer()">
+  START A NEW PROJECT
+</button>
+<div class="border-animate-shape">
+  <img src="assets/images/border-shape-new.png" alt="arrow" />
+  <img class="animate-infine-arrow" src="assets/images/animate-arrow.png" alt="arrow" />
+</div>
+<div id="drawer">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <button class="close-btn" onclick="hideDrawer()"><img src="assets/images/close.png"
+                      alt="close"></button>
+          </div>
+      </div>
+  </div>
+  <div class="container form-container">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="form-cirle-rotate">
+                  <img src="assets/images/form-circle.png" alt="circle">
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <h1>Request for Quotes.</h1>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6 col-md-6">
+              <div class="input-group-form">
+                  <label for="name">What's your name?</label>
+                  <input type="text" id="name" placeholder="Type your fullname">
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+              <div class="input-group-form">
+                  <label for="email">What's your email address?</label>
+                  <input type="email" id="email" placeholder="Type email address">
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-6 col-md-6">
+              <div class="input-group-form">
+                  <label for="mobile">What's your mobile number?</label>
+                  <input type="text" id="mobile" placeholder="+91 00000 00000">
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+              <div class="input-group-form">
+                  <label for="organization">What's your organization name?</label>
+                  <input type="text" id="organization" placeholder="Company name">
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-lg-12 col-md-12">
+              <div class="input-group-form">
+                  <label for="project">Tell us about your project</label>
+                  <textarea id="project" placeholder="Type"></textarea>
+              </div>
+          </div>
+      </div>
+      <button type="submit" class="new-Primary-btn request-btn">
+          Send Request
+          <span class="arrow-animate-btn">
+              <i class="icon"></i>
+          </span>
+      </button>
+      <div class="circle-animation"></div>
+  </div>
+</div>
+<div id="overlay" onclick="hideDrawer()"></div>
