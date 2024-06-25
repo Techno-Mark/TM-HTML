@@ -308,3 +308,19 @@ links.forEach(function (element) {
     this.classList.add('active');
   });
 });
+
+//sticky cta strpe
+var btn = $('#sticky-panel');
+var closeBtn = $('#close');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+closeBtn.click(function() {
+    btn.hide();
+});
