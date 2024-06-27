@@ -10,6 +10,7 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+
 /* common css Start*/
 .new-Primary-btn {
     font-family: Inter;
@@ -103,6 +104,7 @@ button:focus {
     text-transform: uppercase;
     text-decoration: none !important;
     margin: 50px auto 0;
+    border: none;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -858,6 +860,21 @@ header.sticky-header {
 .input-group-form input::-ms-input-placeholder,
 .input-group-form textarea::-ms-input-placeholder {
     color: #c0c0c0;
+}
+
+.input-group-form .error {
+    color: #d4d4d4;
+    font-size: 14px;
+    display: none;
+}
+.success {
+    color: #00d000;
+    display: none;
+    margin: 1rem;
+}
+div#erroemessage {
+    margin: 1rem;
+    color: red;
 }
 
 .request-btn {
@@ -1978,6 +1995,34 @@ header.sticky-header {
     color: #344968;
     color: #344968;
 }
+.form-area .form-wrap {
+    position: relative;
+}
+.form-area .form-wrap span.error {
+    position: absolute;
+    bottom: 13px;
+    left: 0;
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+.form-area .danger {
+    color: red;
+    margin-top: 10px;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.form-area .success {
+    color: green;
+    margin-top: 10px;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
 
 /******FORM SECTION END*****/
 
