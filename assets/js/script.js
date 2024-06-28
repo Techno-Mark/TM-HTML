@@ -242,9 +242,9 @@ $(window).scroll(function () {
     //Sidebar form class add & remove
     var scroll = $(window).scrollTop();
     if (scroll > 900) {
-        $(".sidebar-btn").addClass("lightHeader");
+        $(".sidebar-popup").addClass("lightHeader");
     } else {
-        $(".sidebar-btn").removeClass("lightHeader");
+        $(".sidebar-popup").removeClass("lightHeader");
     }
 });
 //Scroll to Top

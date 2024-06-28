@@ -501,10 +501,16 @@ header.sticky-header {
 .sidebar-popup {
     position: fixed;
     top: 5.8rem;
-    right: 0;
+    right: -5px;
     height: 100%;
     width: 100px;
     z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-left: 1px solid #8e9aab;
+    border-top: 1px solid #8e9aab;
 
 }
 
@@ -515,7 +521,8 @@ header.sticky-header {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 8px;
-    text-transform: uppercase;
+    border: none;
+    /* text-transform: uppercase;
     writing-mode: vertical-rl;
     -ms-writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
@@ -527,17 +534,25 @@ header.sticky-header {
     position: fixed;
     padding: 0 2rem;
     border: none;
-    border-left: 1px solid #8e9aab;
+    border-left: 1px solid #8e9aab; */
+    background-color: transparent;
+    transform: rotate(90deg);
+    transform-origin: center;
+    white-space: nowrap;
+    width: 0;
+    padding: 0;
+    position: absolute;
+    top: -10rem;
 }
 
-.sidebar-btn.lightHeader {
+.sidebar-popup.lightHeader {
     background: #ffffff;
 }
 
 .border-animate-shape {
     position: absolute;
     top: 45%;
-    left: -2.6rem;
+    left: -3rem;
 }
 
 .animate-infine-arrow {
@@ -867,11 +882,13 @@ header.sticky-header {
     font-size: 14px;
     display: none;
 }
+
 .success {
     color: #00d000;
     display: none;
     margin: 1rem;
 }
+
 div#erroemessage {
     margin: 1rem;
     color: red;
@@ -893,11 +910,11 @@ div#erroemessage {
 
 @keyframes spin {
     from {
-        transform: rotate(0deg);
+        transform: rotate(-0deg);
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 
 }
@@ -1995,9 +2012,11 @@ div#erroemessage {
     color: #344968;
     color: #344968;
 }
+
 .form-area .form-wrap {
     position: relative;
 }
+
 .form-area .form-wrap span.error {
     position: absolute;
     bottom: 13px;
@@ -2006,6 +2025,7 @@ div#erroemessage {
     color: red;
     display: none;
 }
+
 .form-area .danger {
     color: red;
     margin-top: 10px;
@@ -2014,6 +2034,7 @@ div#erroemessage {
     border: 1px solid;
     border-radius: 5px;
 }
+
 .form-area .success {
     color: green;
     margin-top: 10px;
@@ -2094,6 +2115,7 @@ div#erroemessage {
     height: 400px;
     padding: 3rem 1rem;
 }
+
 .product-services .row .col-lg-4:last-child .services-box {
     border-right: 0;
 }
@@ -2970,10 +2992,18 @@ footer {
         height: auto;
     }
 
-    .sidebar-btn {
+    .sidebar-popup {
         top: 4rem;
-        padding: 0 0.8rem;
+        right: -49px;
+    }
+
+    .sidebar-btn {
+        /* top: 4rem; */
+        padding:0;
         font-size: 16px;
+        position: relative;
+        right: 25px;
+        width: 0px;
 
     }
 
@@ -3458,6 +3488,9 @@ footer {
 @media only screen and (max-width: 1399px) {
     .flip-card .inner .back ul {
         padding-left: 20px;
+    }
+    .sidebar-popup {
+        right: -46px;
     }
 
     .customer-fixed-label {
@@ -3953,8 +3986,12 @@ footer {
 }
 
 @media only screen and (max-width: 1199px) {
-    .sidebar-btn {
+    /* .sidebar-btn {
         top: 4.5rem;
+    } */
+    .sidebar-popup {
+        right: -43px;
+        border-top: 0;
     }
 
     .product-label {
@@ -4457,6 +4494,11 @@ footer {
         top: 8rem;
         width: 100px;
     }
+    .sidebar-popup {
+        right: -41px;
+        top: 3rem;
+       
+    }
 
     .customer-fixed-label h5 {
         font-size: 16px;
@@ -4953,18 +4995,23 @@ footer {
     .main-header .navbar-collapse {
         padding-inline: 20px !important;
     }
+
     .product-services .row .col-lg-4:last-child .services-box {
         border-right: 1px solid #bbc2cd;
     }
+
     .product-services .services-box {
         margin-bottom: 1rem;
     }
-   
+
 
 }
 
 @media only screen and (max-width: 767px) {
-
+    .sidebar-popup {
+        right: -46px;
+        top: 4rem;
+    }
     .input-group-form input,
     .input-group-form textarea {
         width: 100%;
@@ -5479,6 +5526,7 @@ footer {
         display: flex;
         justify-content: space-between;
     }
+
     .close-icon img {
         right: 0;
         top: 0;
@@ -5486,14 +5534,17 @@ footer {
         position: inherit;
         margin-left: 1rem;
     }
+
     .sticky-cta-text b {
         font-size: 14px;
     }
+
     .sticky-cta-text a {
         font-size: 14px;
         margin-left: 5px;
         font-weight: 600;
     }
+
     .product-services .custom-container .row:last-child .services-box {
         border-bottom: 1px solid #bbc2cd;
         margin-bottom: 1rem;
@@ -5774,9 +5825,9 @@ footer {
         text-align: center;
     }
 
-    .sidebar-btn {
+    /* .sidebar-btn {
         top: 4.3rem;
-    }
+    } */
 
     .resource-stripe ul li b,
     .resource-stripe ul li p {
