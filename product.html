@@ -120,8 +120,115 @@
                         </a>
                     </li>
                 </ul>
+                <div class="inline-sidebar-sm">
+                    <div class="themechange">
+                        <img src="./assets/images/coffee-cup.png" alt="darklight" />
+                    </div>
+                    <div class="sidebar-popup show-sm-sidebar" id="sidebar-popup1">
+                        <button type="button" class="sidebar-btn" onclick="showDrawer1()">
+                            START A PROJECT
+                        </button>
+                        <div class="border-animate-shape">
+                            <img src="assets/images/border-shape-new.png" alt="arrow" />
+                            <img class="animate-infine-arrow" src="assets/images/animate-arrow.png" alt="arrow" />
+                        </div>
+                        <div id="drawer">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <button class="close-btn" onclick="hideDrawer1()"><img
+                                                src="assets/images/close.png" alt="close"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container form-container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-cirle-rotate">
+                                            <img src="assets/images/form-circle.png" alt="circle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h1>Request for Quotes.</h1>
+                                    </div>
+                                </div>
+                                <form id="projectFormRespo">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <input type="hidden" name="formType" value="FormWithProjectDescription">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="input-group-form">
+                                                <label for="name">What's your name?</label>
+                                                <input type="text" placeholder="Type your fullname" id="fullName2"
+                                                    name="fullName2">
+                                                <span id="fullNameError2" class="error">This field is
+                                                    required.</span><br>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="input-group-form">
+                                                <label for="email">What's your email address?</label>
+                                                <input type="email" placeholder="Type email address" id="email2"
+                                                    name="email2">
+                                                <span id="emailError2" class="error">Please enter a valid email
+                                                    address.</span><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="input-group-form">
+                                                <label for="mobile">What's your mobile number?</label>
+                                                <input type="tel" id="phone2" name="phone2" maxlength="10" minlength="10"
+                                                    placeholder="+91 00000 00000"
+                                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                                <span id="phoneError2" class="error">Please enter  10-digit phone
+                                                    number.</span><br>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            <div class="input-group-form">
+                                                <label for="organization">What's your organization name?</label>
+                                                <input type="text" id="organizationName2" name="organizationName2"
+                                                    placeholder="Company name">
+                                                <span id="organizationNameError2" class="error">This field is
+                                                    required.</span><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12">
+                                            <div class="input-group-form">
+                                                <label for="project">Tell us about your project</label>
+                                                <textarea id="projectDescription2" name="projectDescription2"
+                                                    placeholder="Type"></textarea>
+                                                <span id="projectDescriptionError2" class="error">This field is
+                                                    required.</span><br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="new-Primary-btn request-btn">
+                                        Send Request
+                                        <span class="arrow-animate-btn">
+                                            <i class="icon"></i>
+                                        </span>
+                                    </button>
+                                </form>
+                                <div id="message2" class="success">Form submitted successfully</div>
+                                <div id="erroemessage2" class="danger">Failed</div>
+                                <div class="circle-animation"></div>
+                            </div>
+                        </div>
+                        <div id="overlay" onclick="hideDrawer1()"></div>
+                    </div>
+                </div>
             </div>
-            <div class="themechange">
+            <div class="themechange show-xl-themeicon">
                 <img src="./assets/images/coffee-cup.png" alt="darklight" />
             </div>
         </nav>
@@ -133,7 +240,7 @@
     <!--CUSTOMER LABEL END-->
 
     <!--SIDEBAR START-->
-    <section class="sidebar-popup" id="sidebar-popup">
+    <section class="sidebar-popup show-xl-sidebar" id="sidebar-popup">
         <button type="button" class="sidebar-btn" onclick="showDrawer()">
             START A NEW PROJECT
           </button>
@@ -190,7 +297,7 @@
                         <div class="input-group-form">
                             <label for="mobile">What's your mobile number?</label>
                             <input type="tel" id="phone" name="phone" maxlength="10" minlength="10" placeholder="+91 00000 00000" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                            <span id="phoneError" class="error">Please enter a valid 10-digit phone number.</span><br>
+                            <span id="phoneError" class="error">Please enter 10-digit phone number.</span><br>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
@@ -602,7 +709,7 @@
                                 </div>
                                 <div class="result-area col-xl-7 col-lg-7 col-md-12">
                                     <div class="video-area">
-                                        <video autoplay loop="" muted>
+                                        <video id="myVideo" id="myVideo" autoplay loop="" muted playsinline>
                                             <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                                 type="video/mp4" />
                                         </video>
@@ -661,7 +768,7 @@
 
                                 <div class="result-area col-xl-7 col-lg-7 col-md-12">
                                     <div class="video-area">
-                                        <video autoplay loop="" muted>
+                                        <video id="myVideo" autoplay loop="" muted playsinline>
                                             <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                                 type="video/mp4" />
                                         </video>
@@ -720,7 +827,7 @@
 
                                 <div class="result-area col-xl-7 col-lg-7 col-md-12">
                                     <div class="video-area">
-                                        <video autoplay loop="" muted>
+                                        <video id="myVideo" autoplay loop="" muted playsinline>
                                             <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                                 type="video/mp4" />
                                         </video>
@@ -782,7 +889,7 @@
                                 </div>
                                 <div class="result-area col-xl-7 col-lg-7 col-md-12">
                                     <div class="video-area">
-                                        <video autoplay loop="" muted>
+                                        <video id="myVideo" autoplay loop="" muted playsinline>
                                             <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                                 type="video/mp4" />
                                         </video>
@@ -841,7 +948,7 @@
 
                                 <div class="result-area col-xl-7 col-lg-7 col-md-12">
                                     <div class="video-area">
-                                        <video autoplay loop="" muted>
+                                        <video  id="myVideo" autoplay loop="" muted playsinline>
                                             <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                                 type="video/mp4" />
                                         </video>
@@ -907,7 +1014,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="video-area">
-                        <video autoplay loop muted>
+                        <video id="myVideo" autoplay loop muted playsinline>
                             <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4" type="video/mp4" />
                         </video>
                         <div class="play-btn">
@@ -1417,7 +1524,7 @@
                                 <input type="tel" id="phone1" name="phone1" maxlength="10" minlength="10"
                                     oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                                     placeholder="Mobile Number" />
-                                <span id="phoneError1" class="error">Please enter a valid 10-digit phone number.</span>
+                                <span id="phoneError1" class="error">Please enter  10-digit phone number.</span>
                             </div>
                             <div class="form-wrap">
                                 <input type="text" id="CompanyName1" name="CompanyName1" placeholder="Company name" />

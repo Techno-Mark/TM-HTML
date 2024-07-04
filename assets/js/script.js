@@ -45,6 +45,16 @@ window.onload = function () {
 
 //SIDEBAR FORM JS
 
+
+
+function showDrawer1() {
+    document.getElementById("sidebar-popup1").classList.add("show-drawer1");
+}
+
+function hideDrawer1() {
+    document.getElementById("sidebar-popup1").classList.remove("show-drawer1");
+}
+
 function showDrawer() {
     document.getElementById("sidebar-popup").classList.add("show-drawer");
 }
@@ -533,6 +543,118 @@ function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
 }
+
+
+// Start a new project form Respo
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('projectFormRespo').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Perform custom validation
+        let isValid = true;
+
+        const fullName2 = document.getElementById('fullName2');
+        const email2 = document.getElementById('email2');
+        const phone2 = document.getElementById('phone2');
+        const organizationName2 = document.getElementById('organizationName2');
+        const projectDescription2 = document.getElementById('projectDescription2');
+
+        const fullNameError2 = document.getElementById('fullNameError2');
+        const emailError2 = document.getElementById('emailError2');
+        const phoneError2 = document.getElementById('phoneError2');
+        const organizationNameError2 = document.getElementById('organizationNameError2');
+        const projectDescriptionError2 = document.getElementById('projectDescriptionError2');
+        const message2 = document.getElementById('message2');
+        const erroemessage2 = document.getElementById('erroemessage2');
+
+        // Clear previous error messages
+        fullNameError2.style.display = 'none';
+        emailError2.style.display = 'none';
+        phoneError2.style.display = 'none';
+        organizationNameError2.style.display = 'none';
+        projectDescriptionError2.style.display = 'none';
+        message2.style.display = 'none';
+        erroemessage2.style.display = 'none';
+
+        if (!fullName2.value.trim()) {
+            fullNameError2.style.display = 'block';
+            isValid = false;
+        }
+
+        if (!email2.validity.valid || !validateEmail(email2.value)) {
+            emailError2.style.display = 'block';
+            isValid = false;
+        }
+
+        if (!phone2.validity.valid || phone2.value.length !== 10) {
+            phoneError2.style.display = 'block';
+            isValid = false;
+        }
+
+        if (!organizationName2.value.trim()) {
+            organizationNameError2.style.display = 'block';
+            isValid = false;
+        }
+
+        if (!projectDescription2.value.trim()) {
+            projectDescriptionError2.style.display = 'block';
+            isValid = false;
+        }
+
+        if (isValid) {
+            // Capture form data
+
+
+            // Log the form data to console
+            // console.log('Form Data:', formData);
+
+            // Send form data to server using fetch
+            fetch('https://crm-stageapi.pacificabs.com:3003/api/form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(
+                    {
+                        formType: "FormWithProjectDescription",
+                        fullName: fullName2.value,
+                        email: email2.value,
+                        phone: phone2.value,
+                        organizationName: organizationName2.value,
+                        projectDescription: projectDescription2.value
+                    }
+                )
+            })
+                // .then(response => response.json())
+                .then(response => {
+                    if (response.ResponseStatus == "success") {
+                        message2.style.display = 'block';
+                        document.getElementById('projectFormRespo').reset();
+                    }
+                    else {
+                        erroemessage2.style.display = 'block';
+                    }
+                    // console.log('Success:', data);
+
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+        }
+    });
+});
+
+function validateEmail(email) {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+}
+
+//  auto video play
+document.addEventListener('DOMContentLoaded', function () {
+    var video = document.getElementById('myVideo');
+    video.play();
+});
+
 
 
 
