@@ -22,7 +22,112 @@
 
 <body>
     <!--HEADER SECTION START-->
-    <header class="main-header"></header>
+    <header class="main-header">
+        <nav class="navbar navbar-expand-xl navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/Group.svg" alt="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#technomarknavbar"
+                aria-controls="technomarknavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="technomarknavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="servicenavbar" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="servicenavbar">
+                            <div class="service-navbar-container">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="departmanet-navigation">
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086195 (1).svg" alt="product" />
+                                                <span>Product engineering</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086473.svg" alt="software" />
+                                                <span>Software development</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086195 (1).svg" alt="mobileapp" />
+
+                                                <span>Mobile Apps</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086195 (2).svg" alt="uiux" />
+                                                <span>UI & UX Design</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="departmanet-navigation">
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 260864731.svg" alt="testing" />
+                                                <span>Testing & Automation</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086195 (4).svg" alt="Consultation" />
+                                                <span>Consultation</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086195 (5).svg" alt="digital" />
+                                                <span>Digital transformation</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 260864731-cloud.svg" alt="cloud" />
+                                                <span>Cloud engineering & Devops</span>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="departmanet-navigation">
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086195 (7).svg" alt="ai_ml" />
+                                                <span>AI & ML Development</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086195 (8).svg" alt="blockchain" />
+                                                <span>Blockchain</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 26086195 (9).svg" alt="IoT" />
+                                                <span>IoT App</span>
+                                            </a>
+                                            <a href="#">
+                                                <img src="./assets/images/Frame 2608647311.svg" alt="IoT" />
+                                                <span>migration & modernization</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Start-up Services</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="case-studies.html">
+                            Case studies
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Contact us
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="themechange">
+                <img src="./assets/images/coffee-cup.png" alt="darklight" />
+            </div>
+        </nav>
+    </header>
     <!--HEADER SECTION END-->
 
     <!--CUSTOMER LABEL START-->
@@ -30,7 +135,98 @@
     <!--CUSTOMER LABEL END-->
 
     <!--SIDEBAR START-->
-    <section class="sidebar-popup" id="sidebar-popup"></section>
+    <section class="sidebar-popup" id="sidebar-popup">
+        <button type="button" class="sidebar-btn" onclick="showDrawer()">
+            START A NEW PROJECT
+          </button>
+          <div class="border-animate-shape">
+            <img src="assets/images/border-shape-new.png" alt="arrow" />
+            <img class="animate-infine-arrow" src="assets/images/animate-arrow.png" alt="arrow" />
+          </div>
+          <div id="drawer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="close-btn" onclick="hideDrawer()"><img src="assets/images/close.png"
+                                alt="close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="container form-container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-cirle-rotate">
+                            <img src="assets/images/form-circle.png" alt="circle">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Request for Quotes.</h1>
+                    </div>
+                </div>
+                <form id="projectForm">
+                  <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                          <input type="hidden" name="formType" value="FormWithProjectDescription">
+                      </div>  
+                  </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="input-group-form">
+                            <label for="name">What's your name?</label>
+                            <input type="text" placeholder="Type your fullname" id="fullName" name="fullName" >
+                            <span id="fullNameError" class="error">This field is required.</span><br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="input-group-form">
+                            <label for="email">What's your email address?</label>
+                            <input type="email"  placeholder="Type email address" id="email" name="email" >
+                            <span id="emailError" class="error">Please enter a valid email address.</span><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="input-group-form">
+                            <label for="mobile">What's your mobile number?</label>
+                            <input type="tel" id="phone" name="phone" maxlength="10" minlength="10" placeholder="+91 00000 00000" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                            <span id="phoneError" class="error">Please enter a valid 10-digit phone number.</span><br>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="input-group-form">
+                            <label for="organization">What's your organization name?</label>
+                            <input type="text" id="organizationName" name="organizationName" placeholder="Company name" >
+                            <span id="organizationNameError" class="error">This field is required.</span><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="input-group-form">
+                            <label for="project">Tell us about your project</label>
+                            <textarea id="projectDescription" name="projectDescription" placeholder="Type" ></textarea>
+                            <span id="projectDescriptionError" class="error">This field is required.</span><br>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="new-Primary-btn request-btn">
+                    Send Request
+                    <span class="arrow-animate-btn">
+                        <i class="icon"></i>
+                    </span>
+                </button>
+              </form>
+              <div id="message" class="success">Form submitted successfully</div>
+              <div id="erroemessage" class="danger">Failed</div>
+                <div class="circle-animation"></div>
+            </div>
+          </div>
+          <div id="overlay" onclick="hideDrawer()"></div>
+    </section>
+   
     <!--SIDEBAR END-->
     <!--TOP BANNER SECTION START-->
     <section class="case-studies-banner-home-section paddtb-100">
@@ -93,7 +289,9 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4" type="video/mp4" />
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                    type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
@@ -150,14 +348,14 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                     type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
                                         fill="#168944"></path>
                                 </svg>
                             </div>
@@ -209,14 +407,14 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                     type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
                                         fill="#168944"></path>
                                 </svg>
                             </div>
@@ -270,14 +468,14 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                     type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
                                         fill="#168944"></path>
                                 </svg>
                             </div>
@@ -332,14 +530,14 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                     type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
                                         fill="#168944"></path>
                                 </svg>
                             </div>
@@ -391,14 +589,14 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                     type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
                                         fill="#168944"></path>
                                 </svg>
                             </div>
@@ -453,14 +651,14 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                     type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
                                         fill="#168944"></path>
                                 </svg>
                             </div>
@@ -515,14 +713,14 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                     type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
                                         fill="#168944"></path>
                                 </svg>
                             </div>
@@ -577,14 +775,14 @@
                     <div class="result-area col-xl-7 col-lg-7 col-md-12">
                         <div class="video-area">
                             <video autoplay loop="" muted>
-                                <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                <source width="320" height="240"
+                                    src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
                                     type="video/mp4" />
                             </video>
                             <div class="play-btn">
                                 <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
                                         fill="#168944"></path>
                                 </svg>
                             </div>
@@ -637,7 +835,9 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="video-area">
                         <video autoplay loop muted>
-                            <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4" type="video/mp4" />
+                            <source width="320" height="240"
+                                src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                type="video/mp4" />
                         </video>
                         <div class="play-btn">
                             <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
@@ -863,8 +1063,10 @@
                         <h3>What will happen next?</h3>
                         <ul>
                             <li>We’ll reach out to you within 24 hours.</li>
-                            <li>We’ll discuss your project and gather your requirements and business objectives, and
-                                develop a proposal accordingly.</li>
+                            <li>
+                                We’ll discuss your project and gather your requirements and
+                                business objectives, and develop a proposal accordingly.
+                            </li>
                             <li>You can start 15-days risk-free trial with us.</li>
                         </ul>
                     </div>
@@ -872,30 +1074,43 @@
                 <div class="col-xl-5 col-lg-12 col-md-12">
                     <div class="form-bubble-bg">
                         <div class="form-bubble-circle">
-                            <img src="assets/images/gradient-bubble.svg" alt="bubble">
+                            <img src="assets/images/gradient-bubble.svg" alt="bubble" />
                         </div>
                     </div>
-                    <div class="form-area">
-                        <h4>Request a Free Quote</h4>
-                        <div class="form-wrap">
-                            <input type="text" id="fullName" placeholder="Full name">
+                    <form id="mainContactForm">
+                        <div class="form-area">
+                            <h4>Request a Free Quote</h4>
+                            <div class="form-wrap">
+                                <input type="hidden" name="formType" value="FormWithProjectDescription">
+                            </div>
+                            <div class="form-wrap">
+                                <input type="text" id="fullName1" name="fullName1" placeholder="Full name" />
+                                <span id="fullNameError1" class="error">This field is required.</span><br>
+                            </div>
+                            <div class="form-wrap">
+                                <input type="email" id="email1" name="email1" placeholder="E-mail" />
+                                <span id="emailError1" class="error">Please enter a valid email address.</span><br>
+                            </div>
+                            <div class="form-wrap">
+                                <input type="tel" id="phone1" name="phone1" maxlength="10" minlength="10"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+                                    placeholder="Mobile Number" />
+                                <span id="phoneError1" class="error">Please enter a valid 10-digit phone number.</span>
+                            </div>
+                            <div class="form-wrap">
+                                <input type="text" id="CompanyName1" name="CompanyName1" placeholder="Company name" />
+                                <span id="CompanyError1" class="error">This field is required.</span><br>
+                            </div>
+                            <button type="submit" class="new-Primary-btn left-aling-btn">Send Request
+                                <span class="arrow-animate-btn">
+                                    <i class="icon"></i>
+                                </span>
+                            </button>
+                            <div id="message1" class="success">Form submitted successfully</div>
+                            <div id="erroemessage1" class="danger">Failed</div>
                         </div>
-                        <div class="form-wrap">
-                            <input type="mail" id="fullName" placeholder="E-mail">
-                        </div>
-                        <div class="form-wrap">
-                            <input type="number" id="fullName" placeholder="Mobile Number">
-                        </div>
-                        <div class="form-wrap">
-                            <input type="text" id="fullName" placeholder="Company name">
-                        </div>
-                        <a href="" class="new-Primary-btn left-aling-btn">Send Request
-                            <span class="arrow-animate-btn">
-                                <i class="icon"></i>
+                    </form>
 
-                            </span>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -903,13 +1118,109 @@
     <!--FORM  SECTION END-->
 
     <!--FOOTER  SECTION START-->
-    <footer class="main-footer"></footer>
+    <!--FOOTER  SECTION START-->
+    <footer class="main-footer">
+
+        <!--TOP TO BOTTOM SCROLLBAR-->
+        <a href="javascript:" id="return-to-top">
+            <img src="assets/images/top-bottom-arrow.png" alt="top" />
+        </a>
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="primary-footer">
+                        <div class="footer-logo">
+                            <img src="./assets/images/Group 23751958.svg" alt="footerlogo" />
+                        </div>
+                        <div class="footer-title">
+                            <h4>Experience the New way of <span>Developments</span></h4>
+                        </div>
+                        <div class="company-info">
+                            <a href="#"><img src="./assets/images/Phone.svg" alt="phone" /><span>USA: +1 (206) 347
+                                    1395</span></a>
+                            <a href="#"><img src="./assets/images/Phone.svg" alt="contact" /><span>UK: +44 (203) 423
+                                    6509</span></a>
+                            <a href="#"><img src="./assets/images/whatsapp.svg" alt="whatsapp" /><span>Whatsapp |
+                                    +91 - 7069008181</span></a>
+                            <a href="#"><img src="./assets/images/mail.svg"
+                                    alt="mail" /><span>info@technomark.io</span></a>
+                        </div>
+                        <div class="social-media-footer">
+                            <a href="#"><img src="./assets/images/Group 1800.svg" alt="facebook" /></a>
+                            <a href="#"><img src="./assets/images/Group 1801.svg" alt="youtube" /></a>
+                            <a href="#"><img src="./assets/images/Group 1802.svg" alt="linkedin" /></a>
+                            <a href="#"><img src="./assets/images/Group 1803.svg" alt="twitter" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="footer-nav">
+                        <a href="#" class="footer-nav-subtitle">Company</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="footer-nav">
+                        <a href="#" class="footer-nav-subtitle">Services</a>
+                        <a href="#">Hire Dedicated Developers</a>
+                        <a href="#">Mobile Apps</a>
+                        <a href="#">Cloud Native</a>
+                        <a href="#">AI Development</a>
+                        <a href="#">IoT App</a>
+                        <a href="#">Blockchain</a>
+                        <a href="#">Ecommerce</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-nav secondary-footer">
+                        <a href="#" class="footer-nav-subtitle">Hire Developer Team</a>
+                        <a href="#">AngularJS Developers</a>
+                        <a href="#">Java Developers</a>
+                        <a href="#">Android App Developers</a>
+                        <a href="#">NodeJS Web Developers</a>
+                        <a href="#">AI & ML Developers</a>
+                        <a href="#">PHP Developers</a>
+                        <a href="#">ASP.NET Developers</a>
+                        <a href="#">Python Developers</a>
+                        <a href="#">Flutter App Developers</a>
+                        <a href="#">ReactJS Developers</a>
+                        <a href="#">HTML5 Developers</a>
+                        <a href="#">React Native App Developers</a>
+                        <a href="#">iOS App Developers </a>
+                        <a href="#">WordPress Developers</a>
+                        <a href="#">Shopify Developers</a>
+                        <a href="#">VueJS Developers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-line">
+                    <div class="footer-bottom-left">
+                        <a>Copyright © 2023 TechnoMark. All Rights Reserved.</a>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--FOOTER  SECTION END-->
     <!--FOOTER  SECTION END-->
 
     <!--====== Jquery js ======-->
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script src="assets/js/vendor/jquery-1.12.4.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!--====== Bootstrap js ======-->
 
     <!--    <script src="assets/js/popper.min.js"></script>-->

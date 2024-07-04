@@ -495,6 +495,11 @@ header.sticky-header {
     padding: 30px 40px;
 }
 
+.inline-sidebar-sm .themechange,
+.show-sm-sidebar {
+    display: none;
+}
+
 /******TOP MAIN MENU STYLE END*****/
 
 /******TOP MAIN BANNER STYLE START*****/
@@ -504,7 +509,7 @@ header.sticky-header {
     right: -5px;
     height: 100%;
     width: 100px;
-    z-index: 9999;
+    z-index: 999;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -877,6 +882,11 @@ header.sticky-header {
     color: #c0c0c0;
 }
 
+.error {
+    color: red;
+    display: none;
+}
+
 .input-group-form .error {
     color: #d4d4d4;
     font-size: 14px;
@@ -892,6 +902,7 @@ header.sticky-header {
 div#erroemessage {
     margin: 1rem;
     color: red;
+    display: none;
 }
 
 .request-btn {
@@ -2035,6 +2046,10 @@ div#erroemessage {
     border-radius: 5px;
 }
 
+#erroemessage1 {
+    display: none;
+}
+
 .form-area .success {
     color: green;
     margin-top: 10px;
@@ -2941,8 +2956,6 @@ footer {
 }
 
 /******BOTTOM MAIN FOOTER STYLE END*****/
-
-
 /******RESPONSIVE MEDIA START*****/
 
 @media (min-width: 1200px) {
@@ -2999,7 +3012,7 @@ footer {
 
     .sidebar-btn {
         /* top: 4rem; */
-        padding:0;
+        padding: 0;
         font-size: 16px;
         position: relative;
         right: 25px;
@@ -3489,6 +3502,7 @@ footer {
     .flip-card .inner .back ul {
         padding-left: 20px;
     }
+
     .sidebar-popup {
         right: -46px;
     }
@@ -3986,9 +4000,11 @@ footer {
 }
 
 @media only screen and (max-width: 1199px) {
-    /* .sidebar-btn {
-        top: 4.5rem;
-    } */
+    .show-xl-themeicon,
+    .show-xl-sidebar {
+        display: none;
+    }
+
     .sidebar-popup {
         right: -43px;
         border-top: 0;
@@ -4494,10 +4510,11 @@ footer {
         top: 8rem;
         width: 100px;
     }
+
     .sidebar-popup {
         right: -41px;
         top: 3rem;
-       
+
     }
 
     .customer-fixed-label h5 {
@@ -5012,6 +5029,7 @@ footer {
         right: -46px;
         top: 4rem;
     }
+
     .input-group-form input,
     .input-group-form textarea {
         width: 100%;
