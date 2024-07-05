@@ -1637,6 +1637,9 @@ div#erroemessage {
 .poster.hidden {
     opacity: 0;
 }
+.show-sm-video{
+    display: none;
+}
 
 /******WE TECHNOMARK SECTION END*****/
 
@@ -4550,6 +4553,15 @@ footer {
     .footer-title h4 {
         font-size: 24px;
         line-height: 35px;
+    }
+    .show-sm-video{
+        display: inline-block;
+    }
+    .hide-sm-video{
+        display: none;
+    }
+    .show-sm-video video {
+        width: 100%;
     }
 }
 

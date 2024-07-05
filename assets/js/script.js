@@ -344,315 +344,152 @@ closeBtn.click(function () {
     btn.hide();
 });
 
-// Main footer form
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('mainContactForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // Perform custom validation
-        let isValid = true;
-
-        const fullName1 = document.getElementById('fullName1');
-        const email1 = document.getElementById('email1');
-        const phone1 = document.getElementById('phone1');
-        const CompanyName1 = document.getElementById('CompanyName1');
-
-        const fullNameError1 = document.getElementById('fullNameError1');
-        const emailError1 = document.getElementById('emailError1');
-        const phoneError1 = document.getElementById('phoneError1');
-        const CompanyError1 = document.getElementById('CompanyError1');
-        const message1 = document.getElementById('message1');
-        const erroemessage1 = document.getElementById('erroemessage1');
-
-        // Clear previous error messages
-        fullNameError1.style.display = 'none';
-        emailError1.style.display = 'none';
-        phoneError1.style.display = 'none';
-        CompanyError1.style.display = 'none';
-        message1.style.display = 'none';
-        erroemessage1.style.display = 'none';
-
-        if (!fullName1.value.trim()) {
-            fullNameError1.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!email1.validity.valid || !validateEmail(email1.value)) {
-            emailError1.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!phone1.validity.valid || phone1.value.length !== 10) {
-            phoneError1.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!CompanyName1.value.trim()) {
-            CompanyError1.style.display = 'block';
-            isValid = false;
-        }
-
-
-        if (isValid) {
-            // Capture form data
-
-
-            // Log the form data to console
-            //console.log('Form Data:', formData);
-
-            // Send form data to server using fetch
-            fetch('https://crm-stageapi.pacificabs.com:3003/api/form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({
-                    formType: "FormWithoutProjectDescription",
-                    fullName: fullName1.value,
-                    email: email1.value,
-                    phone: phone1.value,
-                    CompanyName: CompanyName1.value,
-                    projectDescription: null
-                })
-            })
-                // .then(response => response.json())
-                .then(response => {
-                    if (response.ResponseStatus == "success") {
-                        message1.style.display = 'block';
-                        document.getElementById('mainContactForm').reset();
-                    }
-                    else {
-                        erroemessage1.style.display = 'block';
-                    }
-                    // console.log('Success:', data);
-
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                });
-        }
-    });
-});
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-
-
-
-// Start a new project form
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('projectForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // Perform custom validation
-        let isValid = true;
-
-        const fullName = document.getElementById('fullName');
-        const email = document.getElementById('email');
-        const phone = document.getElementById('phone');
-        const organizationName = document.getElementById('organizationName');
-        const projectDescription = document.getElementById('projectDescription');
-
-        const fullNameError = document.getElementById('fullNameError');
-        const emailError = document.getElementById('emailError');
-        const phoneError = document.getElementById('phoneError');
-        const organizationNameError = document.getElementById('organizationNameError');
-        const projectDescriptionError = document.getElementById('projectDescriptionError');
-        const message = document.getElementById('message');
-        const erroemessage = document.getElementById('erroemessage');
-
-        // Clear previous error messages
-        fullNameError.style.display = 'none';
-        emailError.style.display = 'none';
-        phoneError.style.display = 'none';
-        organizationNameError.style.display = 'none';
-        projectDescriptionError.style.display = 'none';
-        message.style.display = 'none';
-        erroemessage.style.display = 'none';
-
-        if (!fullName.value.trim()) {
-            fullNameError.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!email.validity.valid || !validateEmail(email.value)) {
-            emailError.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!phone.validity.valid || phone.value.length !== 10) {
-            phoneError.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!organizationName.value.trim()) {
-            organizationNameError.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!projectDescription.value.trim()) {
-            projectDescriptionError.style.display = 'block';
-            isValid = false;
-        }
-
-        if (isValid) {
-            // Capture form data
-
-
-            // Log the form data to console
-            // console.log('Form Data:', formData);
-
-            // Send form data to server using fetch
-            fetch('https://crm-stageapi.pacificabs.com:3003/api/form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(
-                    {
-                        formType: "FormWithProjectDescription",
-                        fullName: fullName.value,
-                        email: email.value,
-                        phone: phone.value,
-                        organizationName: organizationName.value,
-                        projectDescription: projectDescription.value
-                    }
-                )
-            })
-                // .then(response => response.json())
-                .then(response => {
-                    if (response.ResponseStatus == "success") {
-                        message.style.display = 'block';
-                        document.getElementById('projectForm').reset();
-                    }
-                    else {
-                        erroemessage.style.display = 'block';
-                    }
-                    // console.log('Success:', data);
-
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                });
-        }
-    });
-});
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
-
-
-// Start a new project form Respo
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('projectFormRespo').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent default form submission
-
-        // Perform custom validation
-        let isValid = true;
-
-        const fullName2 = document.getElementById('fullName2');
-        const email2 = document.getElementById('email2');
-        const phone2 = document.getElementById('phone2');
-        const organizationName2 = document.getElementById('organizationName2');
-        const projectDescription2 = document.getElementById('projectDescription2');
-
-        const fullNameError2 = document.getElementById('fullNameError2');
-        const emailError2 = document.getElementById('emailError2');
-        const phoneError2 = document.getElementById('phoneError2');
-        const organizationNameError2 = document.getElementById('organizationNameError2');
-        const projectDescriptionError2 = document.getElementById('projectDescriptionError2');
-        const message2 = document.getElementById('message2');
-        const erroemessage2 = document.getElementById('erroemessage2');
-
-        // Clear previous error messages
-        fullNameError2.style.display = 'none';
-        emailError2.style.display = 'none';
-        phoneError2.style.display = 'none';
-        organizationNameError2.style.display = 'none';
-        projectDescriptionError2.style.display = 'none';
-        message2.style.display = 'none';
-        erroemessage2.style.display = 'none';
-
-        if (!fullName2.value.trim()) {
-            fullNameError2.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!email2.validity.valid || !validateEmail(email2.value)) {
-            emailError2.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!phone2.validity.valid || phone2.value.length !== 10) {
-            phoneError2.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!organizationName2.value.trim()) {
-            organizationNameError2.style.display = 'block';
-            isValid = false;
-        }
-
-        if (!projectDescription2.value.trim()) {
-            projectDescriptionError2.style.display = 'block';
-            isValid = false;
-        }
-
-        if (isValid) {
-            // Capture form data
-
-
-            // Log the form data to console
-            // console.log('Form Data:', formData);
-
-            // Send form data to server using fetch
-            fetch('https://crm-stageapi.pacificabs.com:3003/api/form', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(
-                    {
-                        formType: "FormWithProjectDescription",
-                        fullName: fullName2.value,
-                        email: email2.value,
-                        phone: phone2.value,
-                        organizationName: organizationName2.value,
-                        projectDescription: projectDescription2.value
-                    }
-                )
-            })
-                // .then(response => response.json())
-                .then(response => {
-                    if (response.ResponseStatus == "success") {
-                        message2.style.display = 'block';
-                        document.getElementById('projectFormRespo').reset();
-                    }
-                    else {
-                        erroemessage2.style.display = 'block';
-                    }
-                    // console.log('Success:', data);
-
-                })
-                .catch((error) => {
-                    console.error('Error:', error);
-                });
-        }
-    });
-});
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-}
 
 //  auto video play
 document.addEventListener('DOMContentLoaded', function () {
     var video = document.getElementById('myVideo');
     video.play();
+});
+
+
+//Form validate & API call
+document.addEventListener('DOMContentLoaded', function () {
+    const forms = [
+        {
+            formId: 'mainContactForm',
+            fields: [
+                { id: 'fullName1', errorId: 'fullNameError1' },
+                { id: 'email1', errorId: 'emailError1', validate: validateEmail },
+                { id: 'phone1', errorId: 'phoneError1', validate: validatePhone },
+                { id: 'CompanyName1', errorId: 'CompanyError1' }
+            ],
+            apiPayload: (fields) => ({
+                formType: "FormWithoutProjectDescription",
+                fullName: fields['fullName1'].value,
+                email: fields['email1'].value,
+                phone: fields['phone1'].value,
+                organizationName: fields['CompanyName1'].value,
+                projectDescription: null
+            }),
+            successMessageId: 'message1',
+            errorMessageId: 'erroemessage1'
+        },
+        {
+            formId: 'projectForm',
+            fields: [
+                { id: 'fullName', errorId: 'fullNameError' },
+                { id: 'email', errorId: 'emailError', validate: validateEmail },
+                { id: 'phone', errorId: 'phoneError', validate: validatePhone },
+                { id: 'organizationName', errorId: 'organizationNameError' },
+                { id: 'projectDescription', errorId: 'projectDescriptionError' }
+            ],
+            apiPayload: (fields) => ({
+                formType: "FormWithProjectDescription",
+                fullName: fields['fullName'].value,
+                email: fields['email'].value,
+                phone: fields['phone'].value,
+                organizationName: fields['organizationName'].value,
+                projectDescription: fields['projectDescription'].value
+            }),
+            successMessageId: 'message',
+            errorMessageId: 'erroemessage'
+        },
+
+        {
+            formId: 'projectFormRespo',
+            fields: [
+                { id: 'fullName2', errorId: 'fullNameError2' },
+                { id: 'email2', errorId: 'emailError2', validate: validateEmail },
+                { id: 'phone2', errorId: 'phoneError2', validate: validatePhone },
+                { id: 'organizationName2', errorId: 'organizationNameError2' },
+                { id: 'projectDescription2', errorId: 'projectDescriptionError2' }
+            ],
+            apiPayload: (fields) => ({
+                formType: "FormWithProjectDescription",
+                fullName: fields['fullName2'].value,
+                email: fields['email2'].value,
+                phone: fields['phone2'].value,
+                organizationName: fields['organizationName2'].value,
+                projectDescription: fields['projectDescription2'].value
+            }),
+            successMessageId: 'message2',
+            errorMessageId: 'erroemessage2'
+        }
+    ];
+
+    forms.forEach(setupForm);
+
+    function setupForm(formConfig) {
+        const form = document.getElementById(formConfig.formId);
+        const fields = formConfig.fields.reduce((acc, field) => {
+            acc[field.id] = document.getElementById(field.id);
+            return acc;
+        }, {});
+
+        // console.log(form);
+        // console.log(fields);
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+           
+
+            const isValid = validateForm(fields, formConfig.fields);
+            const successMessage = document.getElementById(formConfig.successMessageId);
+            const errorMessage = document.getElementById(formConfig.errorMessageId);
+
+            if (isValid) {
+                const payload = formConfig.apiPayload(fields);
+                sendFormData(payload, successMessage, errorMessage, form);
+            }
+        });
+    }
+
+    function validateForm(fields, fieldConfigs) {
+        let isValid = true;
+        fieldConfigs.forEach(({ id, errorId, validate }) => {
+            const field = fields[id];
+            const errorElement = document.getElementById(errorId);
+            errorElement.style.display = 'none';
+
+            if (!field.value.trim() || (validate && !validate(field.value))) {
+                errorElement.style.display = 'block';
+                isValid = false;
+            }
+        });
+        return isValid;
+    }
+
+    function sendFormData(payload, successMessage, errorMessage, form) {
+        fetch('https://crm-stageapi.pacificabs.com:3003/api/form', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        })
+            .then(response => response.json())
+            .then(response => {
+                if (response.ResponseStatus === "success") {
+                    successMessage.style.display = 'block';
+                    form.reset();
+                } else {
+                    errorMessage.style.display = 'block';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                errorMessage.style.display = 'block';
+            });
+    }
+
+    function validateEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(String(email).toLowerCase());
+    }
+
+    function validatePhone(phone) {
+        return phone.length === 10 && /^[0-9]+$/.test(phone);
+    }
 });
 
 
