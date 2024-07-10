@@ -98,7 +98,7 @@ $(document).ready(function () {
         arrows: false,
         dots: false,
         infinite: false,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 2000,
         speed: 2000,
         responsive: [
@@ -164,6 +164,8 @@ $(document).ready(function () {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
+                    infinite: true,
+                    autoplay: true,
                 },
             },
         ],
@@ -241,6 +243,54 @@ $(document).ready(function () {
                 breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
+                },
+            },
+        ],
+    });
+
+     //===== TECHNOLOGIE COMBINE SLIDER
+     $("#combine-slide").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: false,
+        speed: 300,
+        infinite: false,
+        autoplaySpeed: 5000,
+        autoplay: false,
+        prevArrow: '<div class="slick-prev slick-arrow"><img src="assets/images/Arrow-slideleft.png"></div>',
+        nextArrow: '<div class="slick-next slick-arrow"><img src="assets/images/Arrow-slideright.png"></div>',
+        responsive: [
+            {
+                breakpoint: 1499,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+            {
+                breakpoint: 1399,
+                settings: {
+                    slidesToShow: 2.5,
+                },
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                    autoplay: true,
+                    infinite: true,
                 },
             },
         ],

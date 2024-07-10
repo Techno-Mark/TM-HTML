@@ -1,21 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
 
     <!--====== Title ======-->
-    <title>Technomark-Homepage</title>
-
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>technologies</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--====== Slick CSS ======-->
-    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick.css">
     <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- <link rel="stylesheet" href="assets/css/headerfooter.css" /> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/headerfooter.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/innerpage.css"> -->
+
 </head>
 
 <body>
@@ -109,12 +111,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Start-up Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="case-studies.html">
                             Case studies
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown active">
                         <a class="nav-link" href="technologies.html" id="servicenavbar" role="button" 
                             aria-haspopup="true" aria-expanded="false">
                             Technologies
@@ -287,10 +289,10 @@
                                         <div class="col-lg-6 col-md-6">
                                             <div class="input-group-form">
                                                 <label for="mobile">What's your mobile number?</label>
-                                                <input type="tel" id="phone2" name="phone2" maxlength="10" minlength="10"
-                                                    placeholder="+91 00000 00000"
+                                                <input type="tel" id="phone2" name="phone2" maxlength="10"
+                                                    minlength="10" placeholder="+91 00000 00000"
                                                     oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                                                <span id="phoneError2" class="error">Please enter  10-digit phone
+                                                <span id="phoneError2" class="error">Please enter 10-digit phone
                                                     number.</span><br>
                                             </div>
                                         </div>
@@ -346,12 +348,12 @@
     <section class="sidebar-popup show-xl-sidebar" id="sidebar-popup">
         <button type="button" class="sidebar-btn" onclick="showDrawer()">
             START A NEW PROJECT
-          </button>
-          <div class="border-animate-shape">
+        </button>
+        <div class="border-animate-shape">
             <img src="assets/images/border-shape-new.png" alt="arrow" />
             <img class="animate-infine-arrow" src="assets/images/animate-arrow.png" alt="arrow" />
-          </div>
-          <div id="drawer">
+        </div>
+        <div id="drawer">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
@@ -374,82 +376,85 @@
                     </div>
                 </div>
                 <form id="projectForm">
-                  <div class="row">
-                      <div class="col-lg-6 col-md-6">
-                          <input type="hidden" name="formType" value="FormWithProjectDescription">
-                      </div>  
-                  </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="input-group-form">
-                            <label for="name">What's your name?</label>
-                            <input type="text" placeholder="Type your fullname" id="fullName" name="fullName" >
-                            <span id="fullNameError" class="error">This field is required.</span><br>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <input type="hidden" name="formType" value="FormWithProjectDescription">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="input-group-form">
-                            <label for="email">What's your email address?</label>
-                            <input type="email"  placeholder="Type email address" id="email" name="email" >
-                            <span id="emailError" class="error">Please enter a valid email address.</span><br>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="input-group-form">
+                                <label for="name">What's your name?</label>
+                                <input type="text" placeholder="Type your fullname" id="fullName" name="fullName">
+                                <span id="fullNameError" class="error">This field is required.</span><br>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="input-group-form">
+                                <label for="email">What's your email address?</label>
+                                <input type="email" placeholder="Type email address" id="email" name="email">
+                                <span id="emailError" class="error">Please enter a valid email address.</span><br>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="input-group-form">
-                            <label for="mobile">What's your mobile number?</label>
-                            <input type="tel" id="phone" name="phone" maxlength="10" minlength="10" placeholder="+91 00000 00000" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                            <span id="phoneError" class="error">Please enter 10-digit phone number.</span><br>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="input-group-form">
+                                <label for="mobile">What's your mobile number?</label>
+                                <input type="tel" id="phone" name="phone" maxlength="10" minlength="10"
+                                    placeholder="+91 00000 00000"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                                <span id="phoneError" class="error">Please enter 10-digit phone number.</span><br>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="input-group-form">
+                                <label for="organization">What's your organization name?</label>
+                                <input type="text" id="organizationName" name="organizationName"
+                                    placeholder="Company name">
+                                <span id="organizationNameError" class="error">This field is required.</span><br>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="input-group-form">
-                            <label for="organization">What's your organization name?</label>
-                            <input type="text" id="organizationName" name="organizationName" placeholder="Company name" >
-                            <span id="organizationNameError" class="error">This field is required.</span><br>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="input-group-form">
+                                <label for="project">Tell us about your project</label>
+                                <textarea id="projectDescription" name="projectDescription"
+                                    placeholder="Type"></textarea>
+                                <span id="projectDescriptionError" class="error">This field is required.</span><br>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 col-md-12">
-                        <div class="input-group-form">
-                            <label for="project">Tell us about your project</label>
-                            <textarea id="projectDescription" name="projectDescription" placeholder="Type" ></textarea>
-                            <span id="projectDescriptionError" class="error">This field is required.</span><br>
-                        </div>
-                    </div>
-                </div>
-                <button type="submit" class="new-Primary-btn request-btn">
-                    Send Request
-                    <span class="arrow-animate-btn">
-                        <i class="icon"></i>
-                    </span>
-                </button>
-              </form>
-              <div id="message" class="success">Form submitted successfully</div>
-              <div id="erroemessage" class="danger">Failed</div>
+                    <button type="submit" class="new-Primary-btn request-btn">
+                        Send Request
+                        <span class="arrow-animate-btn">
+                            <i class="icon"></i>
+                        </span>
+                    </button>
+                </form>
+                <div id="message" class="success">Form submitted successfully</div>
+                <div id="erroemessage" class="danger">Failed</div>
                 <div class="circle-animation"></div>
             </div>
-          </div>
-          <div id="overlay" onclick="hideDrawer()"></div>
+        </div>
+        <div id="overlay" onclick="hideDrawer()"></div>
     </section>
-    <!--SIDEBAR END-->
 
-    <!--PRODUCT BANNER SECTION START-->
-    <section class="product-home-section new-home-section" id="product-home-section">
-        <div class="custom-container container">
+    <!--SIDEBAR END-->
+    <!--TOP BANNER SECTION START-->
+    <section class="techno-top-section">
+        <img src="assets/images/techno-shape.svg" class="polygon-shape" alt="techno-shape">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="product-text-container">
-                        <h5 class="product-label">Services</h5>
-                        <h1>Product Engineering & development</h1>
-                        <p class="product-text">
-                            We partner with entrepreneurs and businesses to shape and
-                            validate their product ideas
-                        </p>
-                        <div class="new-cta">
-                            <a href="" class="new-Primary-btn left-aling-btn">Get Free Consultation
+                <div class="col-md-12">
+                    <div class="resource-banner-text technologi-text title-text">
+                        <img src="assets/images/android-vector.png" class="andriod-mode-shape" alt="android-vector">
+                        <h2>Android App Development</h2>
+                        <p>We embrace the power of technology to provide cutting-edge digital solutions that propel our
+                            clients toward unprecedented success</p>
+                        <div class="btn-center">
+                            <a href="" class="new-Primary-btn border-animate-btn left-aling-btn">Hire Now
                                 <span class="arrow-animate-btn">
                                     <i class="icon"></i>
                                 </span>
@@ -457,24 +462,836 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="product-image-container">
-                        <img src="./assets/images/product-img.png" alt="product">
+            </div>
+        </div>
+    </section>
+    <!--TOP BANNER SECTION END-->
+
+    <!--TECHNOLOGIES COMBINE SECTION START-->
+    <section class="techno-combine-section paddtb-100">
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 p-0">
+                    <div class="title-text mb-60">
+                        <h2>Technologies We Use In <span>Combination with Android</span></h2>
+                        <p class="bg-light-describe">At TechnoMark, we seamlessly integrate various backend technologies
+                            and databases with Flutter to enhance the capabilities and functionalities of our mobile
+                            applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="client-slide-wrapper">
+                        <div id="combine-slide">
+                            <div class="combine-box-wrapper">
+                                <div class="combine-box">
+                                    <ul>
+                                        <li>
+                                            <img src="assets/images/combine-android.svg" alt="android">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/plus-icon.svg" alt="plus">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/Firebase.svg" alt="Firebase">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="combine-text">
+                                    <h3>Android + Firebase</h3>
+                                    <p>The best-fit app development combination to launch your MVP faster and robust
+                                        toolkit to build high-quality, feature-rich apps that are scalable, performant,
+                                        and easy to maintain.</p>
+                                </div>
+                            </div>
+                            <div class="combine-box-wrapper">
+                                <div class="combine-box">
+                                    <ul>
+                                        <li>
+                                            <img src="assets/images/combine-android.svg" alt="android">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/plus-icon.svg" alt="plus">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/combine-node-js.png" alt="Firebase">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="combine-text">
+                                    <h3>Android + Node.js</h3>
+                                    <p>The best-fit app development combination to launch your MVP faster and robust
+                                        toolkit to build high-quality, feature-rich apps that are scalable, performant,
+                                        and easy to maintain.</p>
+                                </div>
+                            </div>
+                            <div class="combine-box-wrapper">
+                                <div class="combine-box">
+                                    <ul>
+                                        <li>
+                                            <img src="assets/images/combine-android.svg" alt="android">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/plus-icon.svg" alt="plus">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/combine-mongo.svg" alt="mongo">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="combine-text">
+                                    <h3>Android + MangoDB</h3>
+                                    <p>The best-fit app development combination to launch your MVP faster and robust
+                                        toolkit to build high-quality, feature-rich apps that are scalable, performant,
+                                        and easy to maintain.</p>
+                                </div>
+                            </div>
+                            <div class="combine-box-wrapper">
+                                <div class="combine-box">
+                                    <ul>
+                                        <li>
+                                            <img src="assets/images/combine-android.svg" alt="android">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/plus-icon.svg" alt="plus">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/combine-python.svg" alt="python">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="combine-text">
+                                    <h3>Android + Paython</h3>
+                                    <p>The best-fit app development combination to launch your MVP faster and robust
+                                        toolkit to build high-quality, feature-rich apps that are scalable, performant,
+                                        and easy to maintain.</p>
+                                </div>
+                            </div>
+                            <div class="combine-box-wrapper">
+                                <div class="combine-box">
+                                    <ul>
+                                        <li>
+                                            <img src="assets/images/combine-flutter.svg" alt="flutter">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/plus-icon.svg" alt="plus">
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/combine-api.svg" alt="api">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="combine-text">
+                                    <h3>Flutter + Fast API</h3>
+                                    <p>The best-fit app development combination to launch your MVP faster and robust
+                                        toolkit to build high-quality, feature-rich apps that are scalable, performant,
+                                        and easy to maintain.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 mt-btn">
+                    <button type="submit" class="new-Primary-btn left-aling-btn">Hire Now
+                        <span class="arrow-animate-btn">
+                            <i class="icon"></i>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--TECHNOLOGIES COMBINE SECTION START-->
+
+    <!--SERVICES WE OFFER SECTION START-->
+    <section class="serivces-offer-section paddtb-100">
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 p-0">
+                    <div class="title-text mb-60">
+                        <h2>Android App Development <span>Services We Offer</span></h2>
+                        <p>From Fortune 500 companies to unicorn startups, businesses have leveraged our extensive
+                            Android development services to create scalable apps with rich user experiences across the
+                            Android ecosystem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                    <div class="service-border-box">
+                        <div class="title-icon-inline">
+                            <h4>Custom Android App Development</h4>
+                            <div class="arrow-icon">
+                                <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        <path d="M22.168 32.4349L31.3346 23.2682L22.168 14.1016" stroke="#1D3557"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13 23.2695H31.3333" stroke="#1D3557" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <rect x="0.5" y="1.26953" width="44" height="44" rx="22" stroke="#BBC2CD" />
+                                    <defs>
+                                        <clipPath id="clip0_548_16981">
+                                            <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <p>The best-fit app development combination to launch your MVP faster and robust toolkit to
+                            build high-quality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                    <div class="service-border-box">
+                        <div class="title-icon-inline">
+                            <h4>Custom Android App Development</h4>
+                            <div class="arrow-icon">
+                                <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        <path d="M22.168 32.4349L31.3346 23.2682L22.168 14.1016" stroke="#1D3557"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13 23.2695H31.3333" stroke="#1D3557" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <rect x="0.5" y="1.26953" width="44" height="44" rx="22" stroke="#BBC2CD" />
+                                    <defs>
+                                        <clipPath id="clip0_548_16981">
+                                            <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <p>The best-fit app development combination to launch your MVP faster and robust toolkit to
+                            build high-quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                    <div class="service-border-box">
+                        <div class="title-icon-inline">
+                            <h4>Kotlin MultiPlatform Development</h4>
+                            <div class="arrow-icon">
+                                <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        <path d="M22.168 32.4349L31.3346 23.2682L22.168 14.1016" stroke="#1D3557"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13 23.2695H31.3333" stroke="#1D3557" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <rect x="0.5" y="1.26953" width="44" height="44" rx="22" stroke="#BBC2CD" />
+                                    <defs>
+                                        <clipPath id="clip0_548_16981">
+                                            <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <p>The best-fit app development combination to launch your MVP faster and robust toolkit to
+                            build high-quality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                    <div class="service-border-box">
+                        <div class="title-icon-inline">
+                            <h4>Legacy Android App Modernization</h4>
+                            <div class="arrow-icon">
+                                <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        <path d="M22.168 32.4349L31.3346 23.2682L22.168 14.1016" stroke="#1D3557"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13 23.2695H31.3333" stroke="#1D3557" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <rect x="0.5" y="1.26953" width="44" height="44" rx="22" stroke="#BBC2CD" />
+                                    <defs>
+                                        <clipPath id="clip0_548_16981">
+                                            <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <p>The best-fit app development combination to launch your MVP faster and robust toolkit to
+                            build high-quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                    <div class="service-border-box">
+                        <div class="title-icon-inline">
+                            <h4>Android Embedded (IoT) Development</h4>
+                            <div class="arrow-icon">
+                                <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        <path d="M22.168 32.4349L31.3346 23.2682L22.168 14.1016" stroke="#1D3557"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13 23.2695H31.3333" stroke="#1D3557" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <rect x="0.5" y="1.26953" width="44" height="44" rx="22" stroke="#BBC2CD" />
+                                    <defs>
+                                        <clipPath id="clip0_548_16981">
+                                            <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <p>The best-fit app development combination to launch your MVP faster and robust toolkit to
+                            build high-quality.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+                    <div class="service-border-box">
+                        <div class="title-icon-inline">
+                            <h4>App Code Audit & Optimization</h4>
+                            <div class="arrow-icon">
+                                <svg width="45" height="46" viewBox="0 0 45 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g>
+                                        <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        <path d="M22.168 32.4349L31.3346 23.2682L22.168 14.1016" stroke="#1D3557"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M13 23.2695H31.3333" stroke="#1D3557" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </g>
+                                    <rect x="0.5" y="1.26953" width="44" height="44" rx="22" stroke="#BBC2CD" />
+                                    <defs>
+                                        <clipPath id="clip0_548_16981">
+                                            <rect y="0.769531" width="45" height="45" rx="22.5" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <p>The best-fit app development combination to launch your MVP faster and robust toolkit to
+                            build high-quality.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-sm-12 col-md-12 btn-center">
+                    <a href="" class="new-Primary-btn border-animate-btn">View All
+                        <span class="arrow-animate-btn">
+                            <i class="icon"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SERVICES WE OFFER SECTION END-->
+
+    <!--MOBILE APP SECTION START-->
+    <section class="mobile-app-section ">
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 title-area">
+                    <div class="title-text mb-60">
+                        <h2>Want To Build Your Dream Mobile App <span>Using Android?</span></h2>
+                        <p>TechnoMark can be your trusted Flutter app development company, harnessing the power of this
+                            cross-platform technology for your app project. With a focus on user-centric design and
+                            seamless performance, we deliver Flutter apps that leave a lasting impression.
+                        </p>
+                    </div>
+                    <div class="btn-center">
+                        <a href="" class="new-Primary-btn border-animate-btn left-aling-btn">Let’s Discuss
+                            <span class="arrow-animate-btn">
+                                <i class="icon"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="app-android-bg">
+                        <div class="benefit-list-wrapper">
+                            <div class="benefit-list-item">
+                                <img src="assets/images/shield-tick.png" alt="shield">
+                                <p>100% NDA Protected </p>
+                            </div>
+                            <div class="benefit-list-item">
+                                <img src="assets/images/arrow-swap-horizontal.png" alt="horizontal">
+                                <p>100% Resource substitution </p>
+                            </div>
+                            <div class="benefit-list-item">
+                                <img src="assets/images/profile-2user.png" alt="2user">
+                                <p>Flexible Hiring models </p>
+                            </div>
+                            <div class="benefit-list-item">
+                                <img src="assets/images/rotate-left.png" alt="left">
+                                <p>100% Refund Policy </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--PRODUCT BANNER SECTION END-->
+    <!--MOBILE APP SECTION END-->
 
+    <!--TIME DEVELOPER SECTION START-->
+    <section class="hire-develop-section paddtb-100">
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-lg-4 col-xl-4 col-md-12">
+                    <div class="dev-time-box">
+                        <img src="assets/images/part-time.png" alt="part-time">
+                        <h2>Part-time Developer</h2>
+                        <p>80 Hours/Month
+                        </p>
+                        <ul>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>4 hours a day, 5 days a week</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Monthly Billing</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Hiring Period (min) - 80 Hours</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Availability - When required</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="rounded-btn btn-w-100">Hire Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-12">
+                    <div class="dev-time-box">
+                        <img src="assets/images/full-time.png" alt="full-time">
+                        <h2>Full-time Developer</h2>
+                        <p>160 Hours/Month</p>
+                        <ul>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>8 Hrs/Day – 5 Days/Week</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Monthly Billing</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Hiring Period (min) - 160 Hours</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Availability - Dedicated</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="rounded-btn btn-w-100">Hire Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xl-4 col-md-12">
+                    <div class="dev-time-box">
+                        <img src="assets/images/hourly-time.png" alt="hourly-time">
+                        <h2>Hourly Developer</h2>
+                        <p>Custom Hours </p>
+                        <ul>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Availability - On Demand</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Monthly Billing</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Hiring Period (min) - 40 Hours</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/arrow-right-resource.png" alt="arrow">
+                                <p>Availability - Quick On-boarding</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="rounded-btn btn-w-100">Hire Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--TIME DEVELOPER SECTION END-->
+    <!--CASE STUDIES SECTION START-->
+    <section class="case-studies-section paddtb-100">
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 p-0">
+                    <div class="title-text title-text-left mb-60">
+                        <h2>Android Tech Projects</h2>
+                        <p class="start-line opacity-text">
+                            Explore our impressive projects where our web developers assisted
+                            accredited organizations in overcoming technology hurdles and startup challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="client-slide-wrapper">
+                        <div id="case-slide">
+                            <div class="case-box row">
+                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
+                                    <img src="assets/images/Airattrix.png" alt="logo" />
+                                    <p>
+                                        Airattix, an innovative platform in the storage solutions
+                                        market, connects individuals seeking storage spaces with
+                                        those who have available space to offer.
+                                    </p>
+                                    <ul class="tech-use-text">
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
+                                            Angular JS | Flutter
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Number of
+                                            Developers: 5
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Type Of Service:
+                                            Accelerator
+                                        </li>
+                                    </ul>
+                                    <a class="read-more" href="">read more</a>
+                                </div>
+                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
+                                    <div class="video-area">
+                                        <video id="myVideo" autoplay loop="" muted playsinline>
+                                            <source width="320" height="240"
+                                                src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                                type="video/mp4" />
+                                        </video>
+                                        <div class="play-btn">
+                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                                    fill="#168944"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="result-view">
+                                        <h4>Results</h4>
+                                        <ul class="success-ratio-box">
+                                            <li>
+                                                <p>90%</p>
+                                                <span>SEO Score</span>
+                                            </li>
+                                            <li>
+                                                <p>38 %</p>
+                                                <span>Conversion Rate</span>
+                                            </li>
+                                            <li>
+                                                <p>2 X</p>
+                                                <span>Reach</span>
+                                            </li>
+                                            <li>
+                                                <p>2 X</p>
+                                                <span>Team Scaling</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-box row">
+                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
+                                    <img src="assets/images/Givsum.png" alt="logo" />
+                                    <p>
+                                        Givsum is a comprehensive management and engagement platform that allows
+                                        charitable organizations to integrate their operations, fundraising campaigns,
+                                        and an active community of supporters.
+                                    </p>
+                                    <ul class="tech-use-text">
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
+                                            Ruby on Rails | Open AI
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Number of
+                                            Developers: 2
+                                        </li>
+                                    </ul>
+                                    <a class="read-more" href="">read more</a>
+                                </div>
+
+                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
+                                    <div class="video-area">
+                                        <video id="myVideo" autoplay loop="" muted playsinline>
+                                            <source width="320" height="240"
+                                                src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                                type="video/mp4" />
+                                        </video>
+                                        <div class="play-btn">
+                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                                    fill="#168944"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="result-view">
+                                        <h4>Results</h4>
+                                        <ul class="success-ratio-box">
+                                            <li>
+                                                <p>70%</p>
+                                                <span>Scalability</span>
+                                            </li>
+                                            <li>
+                                                <p>2 X</p>
+                                                <span>Team Scaling</span>
+                                            </li>
+                                            <li>
+                                                <p>1.5 X</p>
+                                                <span>Operational Efficiency</span>
+                                            </li>
+                                            <li>
+                                                <p>20 %</p>
+                                                <span>Automation</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-box row">
+                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
+                                    <img src="assets/images/hls-logo.png" alt="logo" />
+                                    <p>
+                                        HLS Global Group is an international accounting and business advisory firm with
+                                        a focus on providing superior services in the areas of accounting, tax, audit,
+                                        advisory, and consulting.
+                                    </p>
+                                    <ul class="tech-use-text">
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
+                                            .NET | Angular | Azure Cloud
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Number of
+                                            Developers: 6
+                                        </li>
+                                    </ul>
+                                    <a class="read-more" href="">read more</a>
+                                </div>
+
+                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
+                                    <div class="video-area">
+                                        <video id="myVideo" autoplay loop="" muted playsinline>
+                                            <source width="320" height="240"
+                                                src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                                type="video/mp4" />
+                                        </video>
+                                        <div class="play-btn">
+                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                                    fill="#168944"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="result-view">
+                                        <h4>Results</h4>
+                                        <ul class="success-ratio-box">
+                                            <li>
+                                                <p>90%</p>
+                                                <span>Scalability</span>
+                                            </li>
+                                            <li>
+                                                <p>2 X</p>
+                                                <span>Development Speed</span>
+                                            </li>
+                                            <li>
+                                                <p>2 X</p>
+                                                <span>Operational Efficiency</span>
+                                            </li>
+                                            <li>
+                                                <p>95 %</p>
+                                                <span>Automated Workflow</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-box row">
+                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
+                                    <img src="assets/images/Airattrix.png" alt="logo" />
+                                    <p>
+                                        Airattix, an innovative platform in the storage solutions
+                                        market, connects individuals seeking storage spaces with
+                                        those who have available space to offer.
+                                    </p>
+                                    <ul class="tech-use-text">
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
+                                            Angular JS | Flutter
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Number of
+                                            Developers: 5
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Type Of Service:
+                                            Accelerator
+                                        </li>
+                                    </ul>
+                                    <a class="read-more" href="">read more</a>
+                                </div>
+                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
+                                    <div class="video-area">
+                                        <video id="myVideo" autoplay loop="" muted playsinline>
+                                            <source width="320" height="240"
+                                                src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                                type="video/mp4" />
+                                        </video>
+                                        <div class="play-btn">
+                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                                    fill="#168944"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="result-view">
+                                        <h4>Results</h4>
+                                        <ul class="success-ratio-box">
+                                            <li>
+                                                <p>90%</p>
+                                                <span>SEO Score</span>
+                                            </li>
+                                            <li>
+                                                <p>38 %</p>
+                                                <span>Conversion Rate</span>
+                                            </li>
+                                            <li>
+                                                <p>2 X</p>
+                                                <span>Reach</span>
+                                            </li>
+                                            <li>
+                                                <p>2 X</p>
+                                                <span>Team Scaling</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case-box row">
+                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
+                                    <img src="assets/images/Givsum.png" alt="logo" />
+                                    <p>
+                                        Givsum is a comprehensive management and engagement platform that allows
+                                        charitable organizations to integrate their operations, fundraising campaigns,
+                                        and an active community of supporters.
+                                    </p>
+                                    <ul class="tech-use-text">
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
+                                            Ruby on Rails | Open AI
+                                        </li>
+                                        <li>
+                                            <img src="assets/images/check-circle.png" alt="check" />Number of
+                                            Developers: 2
+                                        </li>
+                                    </ul>
+                                    <a class="read-more" href="">read more</a>
+                                </div>
+
+                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
+                                    <div class="video-area">
+                                        <video id="myVideo" autoplay loop="" muted playsinline>
+                                            <source width="320" height="240"
+                                                src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                                type="video/mp4" />
+                                        </video>
+                                        <div class="play-btn">
+                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                                    fill="#168944"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="result-view">
+                                        <h4>Results</h4>
+                                        <ul class="success-ratio-box">
+                                            <li>
+                                                <p>70%</p>
+                                                <span>Scalability</span>
+                                            </li>
+                                            <li>
+                                                <p>2 X</p>
+                                                <span>Team Scaling</span>
+                                            </li>
+                                            <li>
+                                                <p>1.5 X</p>
+                                                <span>Operational Efficiency</span>
+                                            </li>
+                                            <li>
+                                                <p>20 %</p>
+                                                <span>Automation</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 text-right">
+                    <a href="" class="new-Primary-btn border-animate-btn right-aling-btn">View All
+                        <span class="arrow-animate-btn">
+                            <i class="icon"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CASE STUDIES SECTION END-->
     <!--OUR CORE SERVICES SECTION START-->
-    <section class="core-services product-services paddtb-100">
+    <section class="android-services product-services paddtb-100">
         <div class="custom-container container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="title-text mb-60">
-                        <p class="top-title-text">Foundational Excellence</p>
-                        <h2>Product Engineering & Development <span>Services</span></h2>
+                        <h2>Why Choose <span>Android</span></h2>
+                        <p>Flutter offers many benefits to users for developing cross-platform apps. So, let's know a
+                            few reasons to choose
+                            Flutter for your next mobile app development project.</p>
                     </div>
                 </div>
             </div>
@@ -483,15 +1300,12 @@
                     <div class="services-box">
                         <div class="services-inner-box">
                             <div class="icon">
-                                <img src="assets/images/product-icon/layer.png" alt="enterprise " />
+                                <img src="assets/images/multiplatform.png" alt="multiplatform">
                             </div>
-                            <h3 class="service-title">Product Discovery & Design Services</h3>
+                            <h3 class="service-title">Multiplatform</h3>
                             <p class="service-describe">
                                 We build intuitive and engaging Android, iOS and cross-platform.
                             </p>
-                            <div class="more-section">
-                                <a href="">read more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -499,16 +1313,12 @@
                     <div class="services-box">
                         <div class="services-inner-box">
                             <div class="icon">
-                                <img src="assets/images/product-icon/designtools.png" alt="hire" />
+                                <img src="assets/images/trend-up.png" alt="trend-up">
                             </div>
-                            <h3 class="service-title">UX Design & UI Development Services</h3>
+                            <h3 class="service-title">Faster App Development</h3>
                             <p class="service-describe">
-                                We build intuitive and engaging Android, iOS and
-                                cross-platform.
+                                We build intuitive and engaging Android, iOS and cross-platform.
                             </p>
-                            <div class="more-section">
-                                <a href="">read more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -516,16 +1326,12 @@
                     <div class="services-box">
                         <div class="services-inner-box">
                             <div class="icon">
-                                <img src="assets/images/product-icon/data-2.png" alt="mobile" />
+                                <img src="assets/images/flash.png" alt="flash">
                             </div>
-                            <h3 class="service-title">Rapid Prototype Building Services</h3>
+                            <h3 class="service-title">Better Performance</h3>
                             <p class="service-describe">
-                                We build intuitive and engaging Android, iOS and
-                                cross-platform.
+                                We build intuitive and engaging Android, iOS and cross-platform.
                             </p>
-                            <div class="more-section">
-                                <a href="">read more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -535,16 +1341,12 @@
                     <div class="services-box">
                         <div class="services-inner-box">
                             <div class="icon">
-                                <img src="assets/images/product-icon/mobile-programming.png" alt="cloud" />
+                                <img src="assets/images/note.png" alt="note">
                             </div>
-                            <h3 class="service-title">Product Transform-ate & Re-engineering</h3>
+                            <h3 class="service-title">Extensive Widget Library</h3>
                             <p class="service-describe">
-                                We build intuitive and engaging Android, iOS and
-                                cross-platform.
+                                We build intuitive and engaging Android, iOS and cross-platform.
                             </p>
-                            <div class="more-section">
-                                <a href="">read more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -552,16 +1354,12 @@
                     <div class="services-box">
                         <div class="services-inner-box">
                             <div class="icon">
-                                <img src="assets/images/product-icon/arrange-square.png" alt="airdrop" />
+                                <img src="assets/images/maximize.png" alt="maximize">
                             </div>
-                            <h3 class="service-title">Usability Testing Services</h3>
+                            <h3 class="service-title">Expressive & Flexible UI</h3>
                             <p class="service-describe">
-                                We build intuitive and engaging Android, iOS and
-                                cross-platform.
+                                We build intuitive and engaging Android, iOS and cross-platform.
                             </p>
-                            <div class="more-section">
-                                <a href="">read more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -569,16 +1367,12 @@
                     <div class="services-box">
                         <div class="services-inner-box">
                             <div class="icon">
-                                <img src="assets/images/product-icon/task.png" alt="airdrop" />
+                                <img src="assets/images/export.png" alt="export" />
                             </div>
-                            <h3 class="service-title">Blockchain</h3>
+                            <h3 class="service-title">Growing Ecosystem</h3>
                             <p class="service-describe">
-                                We build intuitive and engaging Android, iOS and
-                                cross-platform.
+                                We build intuitive and engaging Android, iOS and cross-platform.
                             </p>
-                            <div class="more-section">
-                                <a href="">read more</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -587,48 +1381,158 @@
     </section>
     <!--OUR CORE SERVICES SECTION END-->
 
-    <!--PRODUCT SOLUTION SECTION START-->
-    <section class="product-solution-section">
+    <!--GUATANTEE TECHNOMARK SECTION START-->
+    <section class="guaranty-tm-section paddtb-100">
         <div class="custom-container container">
             <div class="row">
-                <div class="col-lg-5 col-md-12 solution-bg-gradient">
-
+                <div class="col-lg-12 col-md-12">
+                    <div class="title-text mb-60">
+                        <h2>100% Guarantee of <b>Techno</b><strong>Mark</strong></h2>
+                    </div>
                 </div>
-                <div class="col-lg-7 col-md-12">
-                    <div class="product-solution-list">
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="video-area">
+                        <video id="myVideo" autoplay loop muted playsinline>
+                            <source width="320" height="240"
+                                src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
+                                type="video/mp4" />
+                        </video>
+                        <div class="play-btn">
+                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
+                                    fill="#168944" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="icon-text-area">
+                        <div class="inline-icon">
+                            <img src="assets/images/check-circle.svg" alt="check" />
+                            <h4>Build Right. Build Smart</h4>
+                        </div>
+                        <p>
+                            We float the product canvas to all stakeholders with information
+                            lik.
+                        </p>
+                    </div>
+                    <div class="icon-text-area">
+                        <div class="inline-icon">
+                            <img src="assets/images/check-circle.svg" alt="check" />
+                            <h4>Ship Early. Ship Often</h4>
+                        </div>
+                        <p>
+                            We float the product canvas to all stakeholders with information
+                            lik.
+                        </p>
+                    </div>
+                    <div class="icon-text-area">
+                        <div class="inline-icon">
+                            <img src="assets/images/check-circle.svg" alt="check" />
+                            <h4>We engineer. We deliver</h4>
+                        </div>
+                        <p>
+                            We float the product canvas to all stakeholders with information
+                            lik.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--GUATANTEE TECHNOMARK SECTION END-->
+
+    <!--MEET OUR DIVERSE SECTION START-->
+    <section class="meet-section paddtb-100">
+        <div class="right-meet-circle">
+            <img src="assets/images/gradient-bubble.svg" alt="bubble" />
+        </div>
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="title-text mb-60">
+                        <h2>Other <span>Technologies</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="meet-grid-icon">
                         <ul>
                             <li>
-                                <div class="scale-area">
-                                    <img src="assets/images/arrow-right-solution.png" alt="arrow">We Deliver End to end
-                                    solutions
-                                </div>
+                                <img src="assets/images/technologies-icon/android3d.svg" alt="android" />
+                                <p>Android</p>
                             </li>
                             <li>
-                                <div class="scale-area">
-                                    <img src="assets/images/arrow-right-solution.png" alt="arrow">We Own the product
-                                </div>
+                                <img src="assets/images/technologies-icon/IOS3d.svg" alt="IOS3d" />
+                                <p>IOS</p>
                             </li>
                             <li>
-                                <div class="scale-area">
-                                    <img src="assets/images/arrow-right-solution.png" alt="arrow"> We Drive the product
-                                    engineering and development
-                                </div>
+                                <img src="assets/images/technologies-icon/Kotlin3d.svg" alt="Kotlin3d " />
+                                <p>Kotlin</p>
                             </li>
                             <li>
-                                <div class="scale-area"><img src="assets/images/arrow-right-solution.png" alt="arrow">We
-                                    Work as your Reliable Technology partner & not just as a Vendor</div>
+                                <img src="assets/images/technologies-icon/Swift3d.svg" alt="swift" />
+                                <p>Swift</p>
                             </li>
                             <li>
-                                <div class="scale-area">
-                                    <img src="assets/images/arrow-right-solution.png" alt="arrow"> We Work with a team
-                                    of experts to engineer your product and not just developer
-                                </div>
+                                <img src="assets/images/technologies-icon/Reactnative3d.svg" alt="react" />
+                                <p>React Native</p>
                             </li>
                             <li>
-                                <div class="scale-area">
-                                    <img src="assets/images/arrow-right-solution.png" alt="arrow"> We Are proactive and
-                                    responsive
-                                </div>
+                                <img src="assets/images/technologies-icon/Flutter3d.svg" alt="flutter " />
+                                <p>Flutter</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/Reactnative3d.svg" alt="react" />
+                                <p>React</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/Next-JS3d.svg" alt="next" />
+                                <p>Next JS</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/Angular3d.svg" alt="angular" />
+                                <p>Angular</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/js3d.svg" alt="android" />
+                                <p>JS</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/jQuery3d.svg" alt="jquery" />
+                                <p>JQuery</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/HTML53d.svg" alt="html " />
+                                <p>HTML5</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/Node3d.svg" alt="node" />
+                                <p>Node JS</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/php3d.svg" alt="php" />
+                                <p>PHP</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/Python3d.svg" alt="python" />
+                                <p>Python</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/dot-Net3d.svg" alt="microsoft" />
+                                <p>.Net</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/Laravel3d.svg" alt="laravel" />
+                                <p>Laravel</p>
+                            </li>
+                            <li>
+                                <img src="assets/images/technologies-icon/Ruby-on-rail3d.svg" alt="Ruby_On_Rails" />
+                                <p>Ruby on Rails</p>
                             </li>
                         </ul>
                     </div>
@@ -636,10 +1540,61 @@
             </div>
         </div>
     </section>
-    <!--PRODUCT SOLUTION SECTION END-->
+    <!--MEET OUR DIVERSE SECTION END-->
 
-    <!--METHOLOGY SECTION START-->
-    <section class="methology-section paddtb-100">
+    <!--MOBILE APP SECTION START-->
+    <section class="expert-app-section paddtb-100">
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="title-text mb-60">
+                        <h2>Our Android App Development <span>Expertise</span></h2>
+                    </div>
+                    <div class="expert-vector">
+                        <img src="assets/images/expert-android.png" alt="expert-android">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="expert-list-box">
+                        <img src="assets/images/tick-circle.svg" alt="tick">
+                        <p>Custom App Development</p>
+                    </div>
+                    <div class="expert-list-box">
+                        <img src="assets/images/tick-circle.svg" alt="tick">
+                        <p>UI/UX Design</p>
+                    </div>
+                    <div class="expert-list-box">
+                        <img src="assets/images/tick-circle.svg" alt="tick">
+                        <p>API Integration: Seamless</p>
+                    </div>
+                    <div class="expert-list-box">
+                        <img src="assets/images/tick-circle.svg" alt="tick">
+                        <p>Performance Optimization</p>
+                    </div>
+                    <div class="expert-list-box">
+                        <img src="assets/images/tick-circle.svg" alt="tick">
+                        <p>Security Features</p>
+                    </div>
+                    <div class="expert-list-box">
+                        <img src="assets/images/tick-circle.svg" alt="tick">
+                        <p>Maintenance & Support</p>
+                    </div>
+                    <div class="expert-list-box">
+                        <img src="assets/images/tick-circle.svg" alt="tick">
+                        <p>Cross-Platform Development</p>
+                    </div>
+                    <div class="expert-list-box">
+                        <img src="assets/images/tick-circle.svg" alt="tick">
+                        <p>Testing & QA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--MOBILE APP SECTION END-->
+
+      <!--METHOLOGY SECTION START-->
+      <section class="methology-section paddtb-100 border-top-0">
         <div class="left-bubble-circle">
             <img src="assets/images/gradient-bubble.svg" alt="bubble" />
         </div>
@@ -767,504 +1722,8 @@
     </section>
     <!--METHOLOGY SECTION END-->
 
-    <!--CASE STUDIES SECTION START-->
-    <section class="case-studies-section paddtb-100">
-        <div class="custom-container container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="title-text title-text-left mb-60">
-                        <h2>Case Studies</h2>
-                        <p class="start-line">
-                            Explore our impressive projects where our web developers
-                            assisted accredited organizations in overcoming technology
-                            hurdles and startup challenges.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="client-slide-wrapper">
-                        <div id="case-slide">
-                            <div class="case-box row">
-                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
-                                    <img src="assets/images/Airattrix.png" alt="logo" />
-                                    <p>
-                                        Airattix, an innovative platform in the storage solutions
-                                        market, connects individuals seeking storage spaces with
-                                        those who have available space to offer.
-                                    </p>
-                                    <ul class="tech-use-text">
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
-                                            Angular JS | Flutter
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Number of
-                                            Developers: 5
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Type Of Service:
-                                            Accelerator
-                                        </li>
-                                    </ul>
-                                    <a class="read-more" href="">read more</a>
-                                </div>
-                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
-                                    <div class="video-area">
-                                        <video id="myVideo" id="myVideo" autoplay loop="" muted playsinline>
-                                            <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
-                                                type="video/mp4" />
-                                        </video>
-                                        <div class="play-btn">
-                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
-                                                    fill="#168944"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="result-view">
-                                        <h4>Results</h4>
-                                        <ul class="success-ratio-box">
-                                            <li>
-                                                <p>90%</p>
-                                                <span>SEO Score</span>
-                                            </li>
-                                            <li>
-                                                <p>38 %</p>
-                                                <span>Conversion Rate</span>
-                                            </li>
-                                            <li>
-                                                <p>2 X</p>
-                                                <span>Reach</span>
-                                            </li>
-                                            <li>
-                                                <p>2 X</p>
-                                                <span>Team Scaling</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="case-box row">
-                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
-                                    <img src="assets/images/Givsum.png" alt="logo" />
-                                    <p>
-                                        Givsum is a comprehensive management and engagement platform that allows
-                                        charitable organizations to integrate their operations, fundraising campaigns,
-                                        and an active community of supporters.
-                                    </p>
-                                    <ul class="tech-use-text">
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
-                                            Ruby on Rails | Open AI
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Number of
-                                            Developers: 2
-                                        </li>
-                                    </ul>
-                                    <a class="read-more" href="">read more</a>
-                                </div>
-
-                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
-                                    <div class="video-area">
-                                        <video id="myVideo" autoplay loop="" muted playsinline>
-                                            <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
-                                                type="video/mp4" />
-                                        </video>
-                                        <div class="play-btn">
-                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
-                                                    fill="#168944"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="result-view">
-                                        <h4>Results</h4>
-                                        <ul class="success-ratio-box">
-                                            <li>
-                                                <p>70%</p>
-                                                <span>Scalability</span>
-                                            </li>
-                                            <li>
-                                                <p>2 X</p>
-                                                <span>Team Scaling</span>
-                                            </li>
-                                            <li>
-                                                <p>1.5 X</p>
-                                                <span>Operational Efficiency</span>
-                                            </li>
-                                            <li>
-                                                <p>20 %</p>
-                                                <span>Automation</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="case-box row">
-                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
-                                    <img src="assets/images/hls-logo.png" alt="logo" />
-                                    <p>
-                                        HLS Global Group is an international accounting and business advisory firm with
-                                        a focus on providing superior services in the areas of accounting, tax, audit,
-                                        advisory, and consulting.
-                                    </p>
-                                    <ul class="tech-use-text">
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
-                                            .NET | Angular | Azure Cloud
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Number of
-                                            Developers: 6
-                                        </li>
-                                    </ul>
-                                    <a class="read-more" href="">read more</a>
-                                </div>
-
-                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
-                                    <div class="video-area">
-                                        <video id="myVideo" autoplay loop="" muted playsinline>
-                                            <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
-                                                type="video/mp4" />
-                                        </video>
-                                        <div class="play-btn">
-                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
-                                                    fill="#168944"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="result-view">
-                                        <h4>Results</h4>
-                                        <ul class="success-ratio-box">
-                                            <li>
-                                                <p>90%</p>
-                                                <span>Scalability</span>
-                                            </li>
-                                            <li>
-                                                <p>2 X</p>
-                                                <span>Development Speed</span>
-                                            </li>
-                                            <li>
-                                                <p>2 X</p>
-                                                <span>Operational Efficiency</span>
-                                            </li>
-                                            <li>
-                                                <p>95 %</p>
-                                                <span>Automated Workflow</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="case-box row">
-                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
-                                    <img src="assets/images/Airattrix.png" alt="logo" />
-                                    <p>
-                                        Airattix, an innovative platform in the storage solutions
-                                        market, connects individuals seeking storage spaces with
-                                        those who have available space to offer.
-                                    </p>
-                                    <ul class="tech-use-text">
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
-                                            Angular JS | Flutter
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Number of
-                                            Developers: 5
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Type Of Service:
-                                            Accelerator
-                                        </li>
-                                    </ul>
-                                    <a class="read-more" href="">read more</a>
-                                </div>
-                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
-                                    <div class="video-area">
-                                        <video id="myVideo" autoplay loop="" muted playsinline>
-                                            <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
-                                                type="video/mp4" />
-                                        </video>
-                                        <div class="play-btn">
-                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
-                                                    fill="#168944"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="result-view">
-                                        <h4>Results</h4>
-                                        <ul class="success-ratio-box">
-                                            <li>
-                                                <p>90%</p>
-                                                <span>SEO Score</span>
-                                            </li>
-                                            <li>
-                                                <p>38 %</p>
-                                                <span>Conversion Rate</span>
-                                            </li>
-                                            <li>
-                                                <p>2 X</p>
-                                                <span>Reach</span>
-                                            </li>
-                                            <li>
-                                                <p>2 X</p>
-                                                <span>Team Scaling</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="case-box row">
-                                <div class="text-area col-xl-5 col-lg-5 col-md-12">
-                                    <img src="assets/images/Givsum.png" alt="logo" />
-                                    <p>
-                                        Givsum is a comprehensive management and engagement platform that allows
-                                        charitable organizations to integrate their operations, fundraising campaigns,
-                                        and an active community of supporters.
-                                    </p>
-                                    <ul class="tech-use-text">
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Core Technology:
-                                            Ruby on Rails | Open AI
-                                        </li>
-                                        <li>
-                                            <img src="assets/images/check-circle.png" alt="check" />Number of
-                                            Developers: 2
-                                        </li>
-                                    </ul>
-                                    <a class="read-more" href="">read more</a>
-                                </div>
-
-                                <div class="result-area col-xl-7 col-lg-7 col-md-12">
-                                    <div class="video-area">
-                                        <video  id="myVideo" autoplay loop="" muted playsinline>
-                                            <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4"
-                                                type="video/mp4" />
-                                        </video>
-                                        <div class="play-btn">
-                                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
-                                                    fill="#168944"></path>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="result-view">
-                                        <h4>Results</h4>
-                                        <ul class="success-ratio-box">
-                                            <li>
-                                                <p>70%</p>
-                                                <span>Scalability</span>
-                                            </li>
-                                            <li>
-                                                <p>2 X</p>
-                                                <span>Team Scaling</span>
-                                            </li>
-                                            <li>
-                                                <p>1.5 X</p>
-                                                <span>Operational Efficiency</span>
-                                            </li>
-                                            <li>
-                                                <p>20 %</p>
-                                                <span>Automation</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12 text-right">
-                    <a href="" class="new-Primary-btn border-animate-btn right-aling-btn">View All
-                        <span class="arrow-animate-btn">
-                            <i class="icon"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--OUR CASE STUDIES SECTION END-->
-
-    <!--GUATANTEE TECHNOMARK SECTION START-->
-    <section class="guaranty-tm-section paddtb-100">
-        <div class="custom-container container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="title-text mb-60">
-                        <h2>100% Guarantee of <b>Techno</b><strong>Mark</strong></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12">
-                    <div class="video-area">
-                        <video id="myVideo" autoplay loop muted playsinline>
-                            <source width="320" height="240" src="https://technomark.io/wp-content/uploads/2024/06/Case-study.mp4" type="video/mp4" />
-                        </video>
-                        <div class="play-btn">
-                            <svg width="24" height="27" viewBox="0 0 24 27" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.9302 13.4651L0.732501 26.8583L0.732502 0.0719318L23.9302 13.4651Z"
-                                    fill="#168944" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="icon-text-area">
-                        <div class="inline-icon">
-                            <img src="assets/images/check-circle.svg" alt="check" />
-                            <h4>Build Right. Build Smart</h4>
-                        </div>
-                        <p>
-                            We float the product canvas to all stakeholders with information
-                            lik.
-                        </p>
-                    </div>
-                    <div class="icon-text-area">
-                        <div class="inline-icon">
-                            <img src="assets/images/check-circle.svg" alt="check" />
-                            <h4>Ship Early. Ship Often</h4>
-                        </div>
-                        <p>
-                            We float the product canvas to all stakeholders with information
-                            lik.
-                        </p>
-                    </div>
-                    <div class="icon-text-area">
-                        <div class="inline-icon">
-                            <img src="assets/images/check-circle.svg" alt="check" />
-                            <h4>We engineer. We deliver</h4>
-                        </div>
-                        <p>
-                            We float the product canvas to all stakeholders with information
-                            lik.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--GUATANTEE TECHNOMARK SECTION END-->
-
-    <!--MEET OUR DIVERSE SECTION START-->
-    <section class="meet-section paddtb-100">
-        <div class="right-meet-circle">
-            <img src="assets/images/gradient-bubble.svg" alt="bubble" />
-        </div>
-        <div class="custom-container container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="title-text mb-60">
-                        <h2>Meet Your <span>Diverse</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
-                    <div class="meet-grid-icon">
-                        <ul>
-                            <li>
-                                <img src="assets/images/android.png" alt="android" />
-                                <p>Android</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/Apple_logo.png" alt="Apple_logo" />
-                                <p>IOS</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/kotlin.png" alt="kotlin " />
-                                <p>Kotlin</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/swift.png" alt="swift" />
-                                <p>Swift</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/react-native.png" alt="react" />
-                                <p>React Native</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/flutter.png" alt="flutter " />
-                                <p>Flutter</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/react.png" alt="react" />
-                                <p>React</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/next-js.png" alt="next" />
-                                <p>Next JS</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/angular.png" alt="angular" />
-                                <p>Angular</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/js-icon.png" alt="android" />
-                                <p>JS</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/jquery.png" alt="jquery" />
-                                <p>JQuery</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/html-icon.png" alt="html " />
-                                <p>HTML5</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/node.png" alt="node" />
-                                <p>Node JS</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/php-icon.png" alt="php" />
-                                <p>PHP</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/python-icon.png" alt="python" />
-                                <p>Python</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/microsoft-icon.png" alt="microsoft" />
-                                <p>.Net</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/laravel-icon.png" alt="laravel" />
-                                <p>Laravel</p>
-                            </li>
-                            <li>
-                                <img src="assets/images/Ruby_On_Rails.png" alt="Ruby_On_Rails" />
-                                <p>Ruby on Rails</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--MEET OUR DIVERSE SECTION END-->
-
-    <!--CLIENTS SPEAK SECTION START-->
-    <section class="client-speak-section paddtb-100">
+      <!--CLIENTS SPEAK SECTION START-->
+      <section class="client-speak-section paddtb-100">
         <img class="client-curve" src="assets/images/client-shape.png" alt="shape" />
         <div class="custom-container container">
             <div class="row">
@@ -1533,6 +1992,7 @@
 
     <!--AWARD SECTION START-->
     <section class="award-section paddtb-100">
+
         <div class="custom-container container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
@@ -1545,40 +2005,40 @@
                 <div class="col-lg-12 col-md-12">
                     <ul class="award-list wow fadeInLeft" data-wow-delay="900ms">
                         <li>
-                            <img src="assets/images/award1.png" alt="award" />
+                            <img src="assets/images/award1.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award2.png" alt="award" />
+                            <img src="assets/images/award2.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award3.png" alt="award" />
+                            <img src="assets/images/award3.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award4.png" alt="award" />
+                            <img src="assets/images/award4.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award5.png" alt="award" />
+                            <img src="assets/images/award5.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award6.png" alt="award" />
+                            <img src="assets/images/award6.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award7.png" alt="award" />
+                            <img src="assets/images/award7.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award8.png" alt="award" />
+                            <img src="assets/images/award8.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award9.png" alt="award" />
+                            <img src="assets/images/award9.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award10.png" alt="award" />
+                            <img src="assets/images/award10.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award11.png" alt="award" />
+                            <img src="assets/images/award11.png" alt="award">
                         </li>
                         <li>
-                            <img src="assets/images/award12.png" alt="award" />
+                            <img src="assets/images/award12.png" alt="award">
                         </li>
                     </ul>
                 </div>
@@ -1586,6 +2046,7 @@
         </div>
     </section>
     <!--AWARD SECTION END-->
+
     <!--FORM  SECTION START-->
     <section class="form-section paddtb-100">
         <div class="custom-container container">
@@ -1627,7 +2088,7 @@
                                 <input type="tel" id="phone1" name="phone1" maxlength="10" minlength="10"
                                     oninput="this.value = this.value.replace(/[^0-9]/g, '')"
                                     placeholder="Mobile Number" />
-                                <span id="phoneError1" class="error">Please enter  10-digit phone number.</span>
+                                <span id="phoneError1" class="error">Please enter 10-digit phone number.</span>
                             </div>
                             <div class="form-wrap">
                                 <input type="text" id="CompanyName1" name="CompanyName1" placeholder="Company name" />
@@ -1648,16 +2109,113 @@
         </div>
     </section>
     <!--FORM  SECTION END-->
-    <!--FOOTER SECTION START-->
-    <footer class="main-footer"></footer>
-    <!--FOOTER SECTION START-->
+
+    <!--FOOTER  SECTION START-->
+    <!--FOOTER  SECTION START-->
+    <footer class="main-footer">
+
+        <!--TOP TO BOTTOM SCROLLBAR-->
+        <a href="javascript:" id="return-to-top">
+            <img src="assets/images/top-bottom-arrow.png" alt="top" />
+        </a>
+        <div class="custom-container container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="primary-footer">
+                        <div class="footer-logo">
+                            <img src="./assets/images/Group 23751958.svg" alt="footerlogo" />
+                        </div>
+                        <div class="footer-title">
+                            <h4>Experience the New way of <span>Developments</span></h4>
+                        </div>
+                        <div class="company-info">
+                            <a href="#"><img src="./assets/images/Phone.svg" alt="phone" /><span>USA: +1 (206) 347
+                                    1395</span></a>
+                            <a href="#"><img src="./assets/images/Phone.svg" alt="contact" /><span>UK: +44 (203) 423
+                                    6509</span></a>
+                            <a href="#"><img src="./assets/images/whatsapp.svg" alt="whatsapp" /><span>Whatsapp |
+                                    +91 - 7069008181</span></a>
+                            <a href="#"><img src="./assets/images/mail.svg"
+                                    alt="mail" /><span>info@technomark.io</span></a>
+                        </div>
+                        <div class="social-media-footer">
+                            <a href="#"><img src="./assets/images/Group 1800.svg" alt="facebook" /></a>
+                            <a href="#"><img src="./assets/images/Group 1801.svg" alt="youtube" /></a>
+                            <a href="#"><img src="./assets/images/Group 1802.svg" alt="linkedin" /></a>
+                            <a href="#"><img src="./assets/images/Group 1803.svg" alt="twitter" /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="footer-nav">
+                        <a href="#" class="footer-nav-subtitle">Company</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-2">
+                    <div class="footer-nav">
+                        <a href="#" class="footer-nav-subtitle">Services</a>
+                        <a href="#">Hire Dedicated Developers</a>
+                        <a href="#">Mobile Apps</a>
+                        <a href="#">Cloud Native</a>
+                        <a href="#">AI Development</a>
+                        <a href="#">IoT App</a>
+                        <a href="#">Blockchain</a>
+                        <a href="#">Ecommerce</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-nav secondary-footer">
+                        <a href="#" class="footer-nav-subtitle">Hire Developer Team</a>
+                        <a href="#">AngularJS Developers</a>
+                        <a href="#">Java Developers</a>
+                        <a href="#">Android App Developers</a>
+                        <a href="#">NodeJS Web Developers</a>
+                        <a href="#">AI & ML Developers</a>
+                        <a href="#">PHP Developers</a>
+                        <a href="#">ASP.NET Developers</a>
+                        <a href="#">Python Developers</a>
+                        <a href="#">Flutter App Developers</a>
+                        <a href="#">ReactJS Developers</a>
+                        <a href="#">HTML5 Developers</a>
+                        <a href="#">React Native App Developers</a>
+                        <a href="#">iOS App Developers </a>
+                        <a href="#">WordPress Developers</a>
+                        <a href="#">Shopify Developers</a>
+                        <a href="#">VueJS Developers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-line">
+                    <div class="footer-bottom-left">
+                        <a>Copyright © 2023 TechnoMark. All Rights Reserved.</a>
+                    </div>
+                    <div class="footer-bottom-right">
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!--FOOTER  SECTION END-->
+    <!--FOOTER  SECTION END-->
 
     <!--====== Jquery js ======-->
     <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
-    <!--====== Bootstrap js ======
-        -->
+    <!-- <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!--====== Bootstrap js ======-->
+
     <!--    <script src="assets/js/popper.min.js"></script>-->
     <script src="assets/js/bootstrap.min.js"></script>
 
@@ -1666,6 +2224,7 @@
 
     <!--====== Custom js ======-->
     <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
